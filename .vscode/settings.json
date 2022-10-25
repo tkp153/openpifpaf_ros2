@@ -1,0 +1,8 @@
+{
+    "cSpell.words": [
+        "imgmsg",
+        "keypoints",
+        "rclpy"
+    ],
+    "cmake.sourceDirectory": "${workspaceFolder}/src/navi_cmake_test"
+}
