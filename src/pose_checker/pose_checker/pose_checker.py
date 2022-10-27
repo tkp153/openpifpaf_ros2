@@ -30,6 +30,8 @@ class pose_checker(Node):
             
             # 信頼度の情報を削除をおこなう処理を実施（x,y座標）
             keypoints_pos_2d = np.delete(keypoints_pos,2,1)
+            print(keypoints_pos_2d)
+            print("\n\n\n\n")
             
             
             #k_numは、keypoints_numberの略称
@@ -48,28 +50,30 @@ class pose_checker(Node):
                 float_value = np.array(num[:2],dtype=float) 
             
                 x_pos,y_pos = float_value
-                print(x_pos,y_pos)
+                #print(x_pos,y_pos)
             
                 #左の動き処理
                 if(k_num == 5 or k_num == 7 or k_num == 7 or k_num == 11):
                     if(k_num == 5):
-                        Point_O = np.numpy([x_pos,y_pos])
+                        Point_O = np.array([x_pos,y_pos])
+                        print(Point_O)
                         r_num += 1
                     if(k_num == 7):
                         Point_A = np.array([x_pos,y_pos])
+                        print(Point_A)
                         r_num += 1
                     if(k_num == 11):
                         Point_O_d = Point_O - np.array([0, 10])
                         Point_B = Point_O_d
+                        print(Point_B)
                         r_num += 1
-                    if(r_num == 2):
-                        print("Right")
+                    if(r_num == 3):
                         L_Raise_Hand = self.deg_checker(Point_A, Point_B, Point_O)
             
                 #右の動き処理
                 if(k_num == 6 or k_num == 8 or k_num == 12 or k_num == 11):
                     if(k_num == 6):
-                        Point_X = np.numpy([x_pos,y_pos])
+                        Point_X = np.array([x_pos,y_pos])
                         l_num += 1
                     if(k_num == 8):
                         Point_C = np.array([x_pos,y_pos])
@@ -77,9 +81,11 @@ class pose_checker(Node):
                     if(k_num == 12):
                         Point_D = Point_X - np.array([0, 10])
                         l_num += 1
-                    if(l_num == 2):
-                        R_Raise_Hand = self.deg_checker(Point_C,Point_D, Point_X)
-                        print("Left")
+                    if(l_num == 3):
+                        #R_Raise_Hand = self.deg_checker(Point_C,Point_D, Point_X)
+                        R_Raise_Hand = False
+                k_num += 1
+                
             #手の上げたのか？
             if(L_Raise_Hand == True or R_Raise_Hand == True ) :
                 print("You are raising hand")  
@@ -87,13 +93,13 @@ class pose_checker(Node):
     def deg_checker(self,Point_1,Point_2,Origin):
         
         Vector_1 = Point_1 - Origin
-        Vector_2 = Point_2 - Origin
+        Vector_2 = Origin  - Point_2
         Length_V1 = np.linalg.norm(Vector_1)
         Length_V2 = np.linalg.norm(Vector_2)
         
-        inner = np.inner(Vector_1,Vector_2)
+        inner = np.dot(Vector_1,Vector_2)
         cos_theta = inner /(Length_V1 * Length_V2)
-        theta = math.degrees(math.atan(cos_theta))
+        theta = np.arccos(cos_theta) * 180 /np.pi
         print(theta)        
             
 def main():
