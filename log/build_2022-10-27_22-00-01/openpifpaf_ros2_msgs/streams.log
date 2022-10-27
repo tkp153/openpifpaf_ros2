@@ -1,0 +1,189 @@
+[0.070s] Invoking command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs -- -j12 -l12
+[0.194s] [  1%] Built target openpifpaf_ros2_msgs__cpp
+[0.208s] [ 12%] Built target openpifpaf_ros2_msgs__rosidl_generator_c
+[0.278s] [ 26%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_introspection_cpp
+[0.278s] [ 34%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_fastrtps_cpp
+[0.284s] [ 46%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_cpp
+[0.293s] [ 57%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_introspection_c
+[0.295s] [ 68%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_c
+[0.331s] [ 79%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_fastrtps_c
+[0.367s] [ 79%] Built target openpifpaf_ros2_msgs
+[0.404s] [ 80%] Built target openpifpaf_ros2_msgs__py
+[0.457s] [ 90%] Built target openpifpaf_ros2_msgs__python
+[0.513s] [ 93%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_fastrtps_c__pyext
+[0.514s] [ 96%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_c__pyext
+[0.517s] [100%] Built target openpifpaf_ros2_msgs__rosidl_typesupport_introspection_c__pyext
+[0.539s] Invoked command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs -- -j12 -l12
+[0.889s] Invoking command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs
+[0.925s] -- Install configuration: ""
+[0.925s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/ament_index/resource_index/rosidl_interfaces/openpifpaf_ros2_msgs
+[0.925s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs
+[0.925s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg
+[0.925s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/rosidl_generator_c__visibility_control.h
+[0.926s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/pose3_d_array.h
+[0.926s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/poses.h
+[0.926s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/pose.h
+[0.926s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail
+[0.926s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__functions.c
+[0.926s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__struct.h
+[0.926s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__functions.h
+[0.927s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__struct.h
+[0.927s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__type_support.h
+[0.927s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__functions.h
+[0.927s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__struct.h
+[0.927s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__functions.c
+[0.927s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__struct.h
+[0.927s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__functions.h
+[0.928s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__functions.c
+[0.928s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__type_support.h
+[0.928s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__type_support.h
+[0.928s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__functions.c
+[0.928s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__struct.h
+[0.929s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__functions.h
+[0.929s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__functions.c
+[0.929s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__type_support.h
+[0.929s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__type_support.h
+[0.930s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__functions.h
+[0.930s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/person.h
+[0.930s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/pose3_d.h
+[0.930s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/library_path.sh
+[0.930s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/library_path.dsv
+[0.931s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__rosidl_generator_c.so
+[0.931s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs
+[0.931s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg
+[0.932s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[0.932s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail
+[0.932s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__rosidl_typesupport_fastrtps_c.h
+[0.933s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__rosidl_typesupport_fastrtps_c.h
+[0.933s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__rosidl_typesupport_fastrtps_c.h
+[0.933s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__rosidl_typesupport_fastrtps_c.h
+[0.934s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__rosidl_typesupport_fastrtps_c.h
+[0.934s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__rosidl_typesupport_fastrtps_c.so
+[0.934s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs
+[0.935s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg
+[0.935s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[0.935s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail
+[0.935s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__rosidl_typesupport_fastrtps_cpp.hpp
+[0.935s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/dds_fastrtps
+[0.936s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__rosidl_typesupport_fastrtps_cpp.hpp
+[0.936s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__rosidl_typesupport_fastrtps_cpp.hpp
+[0.936s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__rosidl_typesupport_fastrtps_cpp.hpp
+[0.936s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__rosidl_typesupport_fastrtps_cpp.hpp
+[0.937s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__rosidl_typesupport_fastrtps_cpp.so
+[0.937s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs
+[0.937s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg
+[0.937s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[0.938s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail
+[0.938s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__rosidl_typesupport_introspection_c.h
+[0.938s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__type_support.c
+[0.939s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__rosidl_typesupport_introspection_c.h
+[0.939s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__type_support.c
+[0.939s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__rosidl_typesupport_introspection_c.h
+[0.939s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__rosidl_typesupport_introspection_c.h
+[0.939s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__type_support.c
+[0.940s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__rosidl_typesupport_introspection_c.h
+[0.940s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__type_support.c
+[0.940s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__type_support.c
+[0.941s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__rosidl_typesupport_introspection_c.so
+[0.941s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__rosidl_typesupport_c.so
+[0.941s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs
+[0.941s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg
+[0.941s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/pose.hpp
+[0.942s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/poses.hpp
+[0.942s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/pose3_d.hpp
+[0.942s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail
+[0.942s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__builder.hpp
+[0.942s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__builder.hpp
+[0.943s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__traits.hpp
+[0.943s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__builder.hpp
+[0.944s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__struct.hpp
+[0.944s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__builder.hpp
+[0.944s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__traits.hpp
+[0.944s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__traits.hpp
+[0.945s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__struct.hpp
+[0.945s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__struct.hpp
+[0.945s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__builder.hpp
+[0.945s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__traits.hpp
+[0.945s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__struct.hpp
+[0.946s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__struct.hpp
+[0.946s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__traits.hpp
+[0.946s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/pose3_d_array.hpp
+[0.946s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/person.hpp
+[0.946s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs
+[0.947s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg
+[0.947s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail
+[0.947s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__type_support.cpp
+[0.947s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__rosidl_typesupport_introspection_cpp.hpp
+[0.947s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__rosidl_typesupport_introspection_cpp.hpp
+[0.947s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d_array__type_support.cpp
+[0.948s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__rosidl_typesupport_introspection_cpp.hpp
+[0.948s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose__type_support.cpp
+[0.948s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__type_support.cpp
+[0.948s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/person__type_support.cpp
+[0.949s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/poses__rosidl_typesupport_introspection_cpp.hpp
+[0.949s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/include/openpifpaf_ros2_msgs/msg/detail/pose3_d__rosidl_typesupport_introspection_cpp.hpp
+[0.949s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__rosidl_typesupport_introspection_cpp.so
+[0.949s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__rosidl_typesupport_cpp.so
+[0.949s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/pythonpath.sh
+[0.950s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/pythonpath.dsv
+[0.950s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/__init__.py
+[0.991s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg
+[0.991s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_pose_s.c
+[0.991s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_poses_s.c
+[0.995s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_person_s.c
+[0.995s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_pose3_d_array_s.c
+[1.008s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_poses.py
+[1.011s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_pose3_d_array.py
+[1.011s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_pose3_d_s.c
+[1.011s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_pose3_d.py
+[1.012s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_pose.py
+[1.013s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/__init__.py
+[1.014s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/msg/_person.py
+[1.014s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/openpifpaf_ros2_msgs_s__rosidl_typesupport_fastrtps_c.cpython-38-x86_64-linux-gnu.so
+[1.020s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/openpifpaf_ros2_msgs_s__rosidl_typesupport_introspection_c.cpython-38-x86_64-linux-gnu.so
+[1.021s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages/openpifpaf_ros2_msgs/openpifpaf_ros2_msgs_s__rosidl_typesupport_c.cpython-38-x86_64-linux-gnu.so
+[1.024s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/libopenpifpaf_ros2_msgs__python.so
+[1.024s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Pose.idl
+[1.025s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Poses.idl
+[1.025s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Person.idl
+[1.029s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Pose3D.idl
+[1.029s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Pose3DArray.idl
+[1.029s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Pose.msg
+[1.029s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Poses.msg
+[1.030s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Person.msg
+[1.030s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Pose3D.msg
+[1.030s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/msg/Pose3DArray.msg
+[1.030s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/ament_index/resource_index/package_run_dependencies/openpifpaf_ros2_msgs
+[1.030s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/ament_index/resource_index/parent_prefix_path/openpifpaf_ros2_msgs
+[1.030s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/ament_prefix_path.sh
+[1.031s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/ament_prefix_path.dsv
+[1.031s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/path.sh
+[1.031s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/environment/path.dsv
+[1.031s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/local_setup.bash
+[1.032s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/local_setup.sh
+[1.033s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/local_setup.zsh
+[1.034s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/local_setup.dsv
+[1.034s] -- Installing: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.dsv
+[1.034s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/ament_index/resource_index/packages/openpifpaf_ros2_msgs
+[1.035s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_generator_cExport.cmake
+[1.035s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_generator_cExport-noconfig.cmake
+[1.035s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_introspection_cExport.cmake
+[1.036s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.039s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_cExport.cmake
+[1.039s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_cExport-noconfig.cmake
+[1.039s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_generator_cppExport.cmake
+[1.040s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_introspection_cppExport.cmake
+[1.041s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.041s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_cppExport.cmake
+[1.041s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgs__rosidl_typesupport_cppExport-noconfig.cmake
+[1.041s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/rosidl_cmake-extras.cmake
+[1.049s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.049s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/ament_cmake_export_libraries-extras.cmake
+[1.051s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/ament_cmake_export_targets-extras.cmake
+[1.051s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.052s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.052s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.053s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgsConfig.cmake
+[1.054s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/cmake/openpifpaf_ros2_msgsConfig-version.cmake
+[1.054s] -- Up-to-date: /root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.xml
+[1.067s] Invoked command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs
