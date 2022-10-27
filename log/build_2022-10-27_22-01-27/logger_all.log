@@ -1,0 +1,546 @@
+[0.146s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.147s] DEBUG:colcon:Parsed command line arguments: Namespace(ament_cmake_args=None, base_paths=['.'], build_base='build', catkin_cmake_args=None, catkin_skip_building_tests=False, cmake_args=None, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, cmake_target=None, cmake_target_skip_unavailable=False, continue_on_error=False, event_handlers=None, executor='parallel', ignore_user_meta=False, install_base='install', log_base=None, log_level=None, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7f0b227e2970>>, merge_install=False, metas=['./colcon.meta'], packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_end=None, packages_ignore=None, packages_ignore_regex=None, packages_select=None, packages_select_build_failed=False, packages_select_by_dep=None, packages_select_regex=None, packages_select_test_failures=False, packages_skip=None, packages_skip_build_finished=False, packages_skip_by_dep=None, packages_skip_regex=None, packages_skip_test_passed=False, packages_skip_up_to=None, packages_start=None, packages_up_to=None, packages_up_to_regex=None, parallel_workers=12, paths=None, symlink_install=False, test_result_base=None, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7f0b227e2970>, verb_name='build', verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f0b227e2ee0>)
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.180s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.181s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.181s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/openpifpaf_ros2'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.181s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.182s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.200s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.201s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extensions ['ignore', 'ignore_ament_install']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'ignore'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'ignore_ament_install'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extensions ['colcon_pkg']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'colcon_pkg'
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extensions ['colcon_meta']
+[0.202s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'colcon_meta'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extensions ['ros']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'ros'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extensions ['cmake', 'python']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'cmake'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'python'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extensions ['python_setup_py']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(opencr_update) by extension 'python_setup_py'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.203s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extension 'ignore'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extension 'ignore_ament_install'
+[0.204s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extensions ['colcon_pkg']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extension 'colcon_pkg'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extensions ['colcon_meta']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extension 'colcon_meta'
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extensions ['ros']
+[0.205s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_msgs) by extension 'ros'
+[0.208s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openpifpaf_ros2_msgs' with type 'ros.ament_cmake' and name 'openpifpaf_ros2_msgs'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extensions ['ignore', 'ignore_ament_install']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extension 'ignore'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extension 'ignore_ament_install'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extensions ['colcon_pkg']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extension 'colcon_pkg'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extensions ['colcon_meta']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extension 'colcon_meta'
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extensions ['ros']
+[0.208s] Level 1:colcon.colcon_core.package_identification:_identify(src/openpifpaf_ros2_node) by extension 'ros'
+[0.209s] DEBUG:colcon.colcon_core.package_identification:Package 'src/openpifpaf_ros2_node' with type 'ros.ament_python' and name 'openpifpaf_ros2_node'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extensions ['ignore', 'ignore_ament_install']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extension 'ignore'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extension 'ignore_ament_install'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extensions ['colcon_pkg']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extension 'colcon_pkg'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extensions ['colcon_meta']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extension 'colcon_meta'
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extensions ['ros']
+[0.209s] Level 1:colcon.colcon_core.package_identification:_identify(src/pose_checker) by extension 'ros'
+[0.210s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pose_checker' with type 'ros.ament_python' and name 'pose_checker'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ignore', 'ignore_ament_install']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ignore_ament_install'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_pkg']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_pkg'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['colcon_meta']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'colcon_meta'
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['ros']
+[0.210s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'ros'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['cmake', 'python']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'cmake'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extensions ['python_setup_py']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros) by extension 'python_setup_py'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ignore', 'ignore_ament_install']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ignore_ament_install'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_pkg']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_pkg'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['colcon_meta']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'colcon_meta'
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extensions ['ros']
+[0.211s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera) by extension 'ros'
+[0.215s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera' with type 'ros.ament_cmake' and name 'realsense2_camera'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ignore', 'ignore_ament_install']
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore'
+[0.215s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ignore_ament_install'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_pkg']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_pkg'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['colcon_meta']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'colcon_meta'
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extensions ['ros']
+[0.216s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_camera_msgs) by extension 'ros'
+[0.217s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_camera_msgs' with type 'ros.ament_cmake' and name 'realsense2_camera_msgs'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ignore', 'ignore_ament_install']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ignore_ament_install'
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_pkg']
+[0.217s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_pkg'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['colcon_meta']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'colcon_meta'
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extensions ['ros']
+[0.218s] Level 1:colcon.colcon_core.package_identification:_identify(src/realsense-ros/realsense2_description) by extension 'ros'
+[0.219s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realsense-ros/realsense2_description' with type 'ros.ament_cmake' and name 'realsense2_description'
+[0.219s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extensions ['ignore', 'ignore_ament_install']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extension 'ignore'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extension 'ignore_ament_install'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extensions ['colcon_pkg']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extension 'colcon_pkg'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extensions ['colcon_meta']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extension 'colcon_meta'
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extensions ['ros']
+[0.220s] Level 1:colcon.colcon_core.package_identification:_identify(src/rgbd_openpifpaf_ros2) by extension 'ros'
+[0.221s] DEBUG:colcon.colcon_core.package_identification:Package 'src/rgbd_openpifpaf_ros2' with type 'ros.ament_python' and name 'rgbd_openpifpaf_ros2'
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.222s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'cmake_args' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'cmake_target' from command line to 'None'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.274s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.275s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.275s] DEBUG:colcon.colcon_core.verb:Building package 'openpifpaf_ros2_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs', 'merge_install': False, 'path': '/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'cmake_target' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'cmake_clean_cache' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'cmake_clean_first' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'cmake_force_configure' from command line to 'False'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'ament_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'catkin_cmake_args' from command line to 'None'
+[0.277s] Level 5:colcon.colcon_core.verb:set package 'pose_checker' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.278s] DEBUG:colcon.colcon_core.verb:Building package 'pose_checker' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/openpifpaf_ros2/build/pose_checker', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/openpifpaf_ros2/install/pose_checker', 'merge_install': False, 'path': '/root/openpifpaf_ros2/src/pose_checker', 'symlink_install': False, 'test_result_base': None}
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_cache' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_clean_first' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'cmake_force_configure' from command line to 'False'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'ament_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_cmake_args' from command line to 'None'
+[0.280s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera_msgs' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.281s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera_msgs' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/openpifpaf_ros2/build/realsense2_camera_msgs', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/openpifpaf_ros2/install/realsense2_camera_msgs', 'merge_install': False, 'path': '/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera_msgs', 'symlink_install': False, 'test_result_base': None}
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'cmake_target' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'cmake_clean_cache' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'cmake_clean_first' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'cmake_force_configure' from command line to 'False'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'ament_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'catkin_cmake_args' from command line to 'None'
+[0.283s] Level 5:colcon.colcon_core.verb:set package 'openpifpaf_ros2_node' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.283s] DEBUG:colcon.colcon_core.verb:Building package 'openpifpaf_ros2_node' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/openpifpaf_ros2/build/openpifpaf_ros2_node', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/openpifpaf_ros2/install/openpifpaf_ros2_node', 'merge_install': False, 'path': '/root/openpifpaf_ros2/src/openpifpaf_ros2_node', 'symlink_install': False, 'test_result_base': None}
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_cache' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_clean_first' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'cmake_force_configure' from command line to 'False'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'ament_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_cmake_args' from command line to 'None'
+[0.286s] Level 5:colcon.colcon_core.verb:set package 'realsense2_camera' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.286s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_camera' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/openpifpaf_ros2/build/realsense2_camera', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/openpifpaf_ros2/install/realsense2_camera', 'merge_install': False, 'path': '/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera', 'symlink_install': False, 'test_result_base': None}
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.288s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.289s] Level 5:colcon.colcon_core.verb:set package 'realsense2_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.289s] DEBUG:colcon.colcon_core.verb:Building package 'realsense2_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/openpifpaf_ros2/build/realsense2_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/openpifpaf_ros2/install/realsense2_description', 'merge_install': False, 'path': '/root/openpifpaf_ros2/src/realsense-ros/realsense2_description', 'symlink_install': False, 'test_result_base': None}
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'cmake_target' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'cmake_clean_cache' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'cmake_clean_first' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'cmake_force_configure' from command line to 'False'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'ament_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'catkin_cmake_args' from command line to 'None'
+[0.291s] Level 5:colcon.colcon_core.verb:set package 'rgbd_openpifpaf_ros2' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.291s] DEBUG:colcon.colcon_core.verb:Building package 'rgbd_openpifpaf_ros2' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2', 'merge_install': False, 'path': '/root/openpifpaf_ros2/src/rgbd_openpifpaf_ros2', 'symlink_install': False, 'test_result_base': None}
+[0.293s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.302s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.302s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs' with build type 'ament_cmake'
+[0.302s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs'
+[0.310s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.310s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.311s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.324s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera_msgs' with build type 'ament_cmake'
+[0.325s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera_msgs'
+[0.328s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.329s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.342s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/openpifpaf_ros2/src/pose_checker' with build type 'ament_python'
+[0.343s] Level 1:colcon.colcon_core.shell:create_environment_hook('pose_checker', 'ament_prefix_path')
+[0.347s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/hook/ament_prefix_path.ps1'
+[0.348s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/hook/ament_prefix_path.dsv'
+[0.349s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/hook/ament_prefix_path.sh'
+[0.353s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.353s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.374s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs -- -j12 -l12
+[0.385s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/realsense2_camera_msgs -- -j12 -l12
+[0.865s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/openpifpaf_ros2/src/pose_checker'
+[0.869s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.869s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.923s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs -- -j12 -l12
+[0.951s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/realsense2_camera_msgs -- -j12 -l12
+[1.316s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/realsense2_camera_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/realsense2_camera_msgs
+[1.322s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs
+[1.431s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.448s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs' for CMake module files
+[1.450s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs' for CMake config files
+[1.451s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[1.454s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[1.456s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[1.457s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[1.459s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib'
+[1.460s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[1.463s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[1.465s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/realsense2_camera_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/realsense2_camera_msgs
+[1.465s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[1.467s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/bin'
+[1.468s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[1.469s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages'
+[1.469s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'pythonpath')
+[1.472s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.ps1'
+[1.473s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.dsv'
+[1.474s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.sh'
+[1.475s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/bin'
+[1.480s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[1.484s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[1.485s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[1.487s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[1.488s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[1.489s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[1.495s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openpifpaf_ros2_msgs)
+[1.500s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs' for CMake module files
+[1.501s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs
+[1.502s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs' for CMake config files
+[1.504s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_msgs', 'cmake_prefix_path')
+[1.506s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/cmake_prefix_path.ps1'
+[1.507s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/cmake_prefix_path.dsv'
+[1.508s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/cmake_prefix_path.sh'
+[1.509s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib'
+[1.509s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_msgs', 'ld_library_path_lib')
+[1.511s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/ld_library_path_lib.ps1'
+[1.512s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/ld_library_path_lib.dsv'
+[1.513s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/ld_library_path_lib.sh'
+[1.514s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/bin'
+[1.514s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/pkgconfig/openpifpaf_ros2_msgs.pc'
+[1.514s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages'
+[1.514s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_msgs', 'pythonpath')
+[1.517s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/pythonpath.ps1'
+[1.518s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/pythonpath.dsv'
+[1.519s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/pythonpath.sh'
+[1.520s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/bin'
+[1.523s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.ps1'
+[1.535s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.dsv'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.sh'
+[1.536s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.bash'
+[1.537s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.zsh'
+[1.538s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/colcon-core/packages/openpifpaf_ros2_msgs)
+[1.762s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/src/pose_checker': PYTHONPATH=/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/pose_checker build --build-base /root/openpifpaf_ros2/build/pose_checker/build install --prefix /root/openpifpaf_ros2/install/pose_checker --record /root/openpifpaf_ros2/build/pose_checker/install.log --single-version-externally-managed
+[1.995s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera_msgs)
+[1.999s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs' for CMake module files
+[2.000s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs' for CMake config files
+[2.001s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'cmake_prefix_path')
+[2.004s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.ps1'
+[2.005s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.dsv'
+[2.006s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/cmake_prefix_path.sh'
+[2.006s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib'
+[2.007s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'ld_library_path_lib')
+[2.009s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.ps1'
+[2.010s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.dsv'
+[2.011s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/ld_library_path_lib.sh'
+[2.011s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/bin'
+[2.011s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/pkgconfig/realsense2_camera_msgs.pc'
+[2.012s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages'
+[2.012s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera_msgs', 'pythonpath')
+[2.015s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.ps1'
+[2.016s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.dsv'
+[2.016s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/hook/pythonpath.sh'
+[2.017s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera_msgs/bin'
+[2.020s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.ps1'
+[2.021s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.dsv'
+[2.022s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.sh'
+[2.023s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.bash'
+[2.024s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/realsense2_camera_msgs/package.zsh'
+[2.024s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/realsense2_camera_msgs/share/colcon-core/packages/realsense2_camera_msgs)
+[2.025s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera' with build type 'ament_cmake'
+[2.025s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera'
+[2.029s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.029s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.044s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/openpifpaf_ros2/src/realsense-ros/realsense2_description' with build type 'ament_cmake'
+[2.045s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/openpifpaf_ros2/src/realsense-ros/realsense2_description'
+[2.048s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.048s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.073s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/realsense2_camera': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/realsense2_camera -- -j12 -l12
+[2.088s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/realsense2_description': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/realsense2_description -- -j12 -l12
+[2.093s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openpifpaf_ros2_msgs)
+[2.099s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs' for CMake module files
+[2.100s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs' for CMake config files
+[2.102s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_msgs', 'cmake_prefix_path')
+[2.104s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/cmake_prefix_path.ps1'
+[2.105s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/cmake_prefix_path.dsv'
+[2.106s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/cmake_prefix_path.sh'
+[2.107s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib'
+[2.107s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_msgs', 'ld_library_path_lib')
+[2.110s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/ld_library_path_lib.ps1'
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/ld_library_path_lib.dsv'
+[2.111s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/ld_library_path_lib.sh'
+[2.112s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/bin'
+[2.112s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/pkgconfig/openpifpaf_ros2_msgs.pc'
+[2.113s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages'
+[2.113s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_msgs', 'pythonpath')
+[2.117s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/pythonpath.ps1'
+[2.118s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/pythonpath.dsv'
+[2.119s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/hook/pythonpath.sh'
+[2.120s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/bin'
+[2.124s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.ps1'
+[2.125s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.dsv'
+[2.126s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.sh'
+[2.127s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.bash'
+[2.128s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/openpifpaf_ros2_msgs/package.zsh'
+[2.130s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/share/colcon-core/packages/openpifpaf_ros2_msgs)
+[2.131s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/openpifpaf_ros2/src/openpifpaf_ros2_node' with build type 'ament_python'
+[2.132s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_node', 'ament_prefix_path')
+[2.136s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/hook/ament_prefix_path.ps1'
+[2.137s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/hook/ament_prefix_path.dsv'
+[2.137s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/hook/ament_prefix_path.sh'
+[2.141s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.141s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.159s] INFO:colcon.colcon_ros.task.ament_python.build:Building ROS package in '/root/openpifpaf_ros2/src/rgbd_openpifpaf_ros2' with build type 'ament_python'
+[2.160s] Level 1:colcon.colcon_core.shell:create_environment_hook('rgbd_openpifpaf_ros2', 'ament_prefix_path')
+[2.166s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/hook/ament_prefix_path.ps1'
+[2.167s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/hook/ament_prefix_path.dsv'
+[2.168s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/hook/ament_prefix_path.sh'
+[2.173s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.173s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.630s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/openpifpaf_ros2/src/openpifpaf_ros2_node'
+[2.632s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.632s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.661s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/realsense2_description -- -j12 -l12
+[2.666s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --build /root/openpifpaf_ros2/build/realsense2_camera -- -j12 -l12
+[2.674s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/pose_checker' for CMake module files
+[2.675s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/src/pose_checker' returned '0': PYTHONPATH=/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/pose_checker build --build-base /root/openpifpaf_ros2/build/pose_checker/build install --prefix /root/openpifpaf_ros2/install/pose_checker --record /root/openpifpaf_ros2/build/pose_checker/install.log --single-version-externally-managed
+[2.675s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/pose_checker' for CMake config files
+[2.676s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/pose_checker/lib'
+[2.677s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/pose_checker/bin'
+[2.677s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/pose_checker/lib/pkgconfig/pose_checker.pc'
+[2.677s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages'
+[2.677s] Level 1:colcon.colcon_core.shell:create_environment_hook('pose_checker', 'pythonpath')
+[2.679s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/hook/pythonpath.ps1'
+[2.680s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/hook/pythonpath.dsv'
+[2.681s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/hook/pythonpath.sh'
+[2.682s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/pose_checker/bin'
+[2.682s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pose_checker)
+[2.684s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/package.ps1'
+[2.685s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/package.dsv'
+[2.686s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/package.sh'
+[2.687s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/package.bash'
+[2.687s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/pose_checker/share/pose_checker/package.zsh'
+[2.688s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/pose_checker/share/colcon-core/packages/pose_checker)
+[3.125s] INFO:colcon.colcon_core.task.python.build:Building Python package in '/root/openpifpaf_ros2/src/rgbd_openpifpaf_ros2'
+[3.129s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[3.129s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[3.156s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/realsense2_description': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/realsense2_description
+[3.162s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/build/realsense2_camera': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/realsense2_camera
+[3.183s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[3.189s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description' for CMake module files
+[3.193s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description' for CMake config files
+[3.195s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[3.199s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[3.200s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[3.201s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[3.205s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/realsense2_description' returned '0': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/realsense2_description
+[3.205s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/bin'
+[3.206s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[3.206s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/lib/python3.8/site-packages'
+[3.207s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/bin'
+[3.210s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.ps1'
+[3.210s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.dsv'
+[3.211s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.sh'
+[3.212s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.bash'
+[3.212s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.zsh'
+[3.213s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[3.218s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[3.223s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera' for CMake module files
+[3.224s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/build/realsense2_camera' returned '0': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2:/root/openpifpaf_ros2/install/pose_checker:/root/openpifpaf_ros2/install/openpifpaf_ros2_node:/opt/ros/foxy LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/cmake --install /root/openpifpaf_ros2/build/realsense2_camera
+[3.225s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera' for CMake config files
+[3.226s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[3.229s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[3.230s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[3.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[3.231s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/lib'
+[3.231s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[3.235s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[3.235s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[3.236s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[3.236s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/bin'
+[3.237s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[3.237s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/lib/python3.8/site-packages'
+[3.238s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/bin'
+[3.241s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[3.242s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[3.243s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.sh'
+[3.244s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.bash'
+[3.244s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[3.245s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[3.275s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_description)
+[3.280s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description' for CMake module files
+[3.281s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description' for CMake config files
+[3.282s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_description', 'cmake_prefix_path')
+[3.285s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.ps1'
+[3.286s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.dsv'
+[3.287s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/hook/cmake_prefix_path.sh'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/bin'
+[3.288s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/lib/pkgconfig/realsense2_description.pc'
+[3.289s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/lib/python3.8/site-packages'
+[3.289s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_description/bin'
+[3.293s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.ps1'
+[3.294s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.dsv'
+[3.295s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.sh'
+[3.296s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.bash'
+[3.297s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_description/share/realsense2_description/package.zsh'
+[3.298s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/realsense2_description/share/colcon-core/packages/realsense2_description)
+[3.347s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(realsense2_camera)
+[3.350s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera' for CMake module files
+[3.351s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera' for CMake config files
+[3.352s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'cmake_prefix_path')
+[3.355s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.ps1'
+[3.355s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.dsv'
+[3.356s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/cmake_prefix_path.sh'
+[3.357s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/lib'
+[3.358s] Level 1:colcon.colcon_core.shell:create_environment_hook('realsense2_camera', 'ld_library_path_lib')
+[3.360s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.ps1'
+[3.361s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.dsv'
+[3.362s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/hook/ld_library_path_lib.sh'
+[3.363s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/bin'
+[3.363s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/lib/pkgconfig/realsense2_camera.pc'
+[3.363s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/lib/python3.8/site-packages'
+[3.364s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/realsense2_camera/bin'
+[3.367s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.ps1'
+[3.368s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.dsv'
+[3.369s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.sh'
+[3.370s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.bash'
+[3.370s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/realsense2_camera/share/realsense2_camera/package.zsh'
+[3.371s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/realsense2_camera/share/colcon-core/packages/realsense2_camera)
+[3.973s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/src/openpifpaf_ros2_node': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/realsense2_camera_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/openpifpaf_ros2_node build --build-base /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build install --prefix /root/openpifpaf_ros2/install/openpifpaf_ros2_node --record /root/openpifpaf_ros2/build/openpifpaf_ros2_node/install.log --single-version-externally-managed
+[4.011s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/openpifpaf_ros2/src/rgbd_openpifpaf_ros2': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/realsense2_camera_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/rgbd_openpifpaf_ros2 build --build-base /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/build install --prefix /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2 --record /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/install.log --single-version-externally-managed
+[4.573s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_node' for CMake module files
+[4.574s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/src/openpifpaf_ros2_node' returned '0': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/realsense2_camera_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/openpifpaf_ros2_node build --build-base /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build install --prefix /root/openpifpaf_ros2/install/openpifpaf_ros2_node --record /root/openpifpaf_ros2/build/openpifpaf_ros2_node/install.log --single-version-externally-managed
+[4.575s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_node' for CMake config files
+[4.576s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib'
+[4.576s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/bin'
+[4.577s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/pkgconfig/openpifpaf_ros2_node.pc'
+[4.577s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages'
+[4.577s] Level 1:colcon.colcon_core.shell:create_environment_hook('openpifpaf_ros2_node', 'pythonpath')
+[4.581s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/hook/pythonpath.ps1'
+[4.582s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/hook/pythonpath.dsv'
+[4.583s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/hook/pythonpath.sh'
+[4.584s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/bin'
+[4.584s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(openpifpaf_ros2_node)
+[4.587s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/package.ps1'
+[4.588s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/package.dsv'
+[4.589s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/package.sh'
+[4.589s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/package.bash'
+[4.590s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node/package.zsh'
+[4.590s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/colcon-core/packages/openpifpaf_ros2_node)
+[4.597s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2' for CMake module files
+[4.598s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/openpifpaf_ros2/src/rgbd_openpifpaf_ros2' returned '0': CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:/root/openpifpaf_ros2/install/realsense2_description:/root/openpifpaf_ros2/install/realsense2_camera:/root/openpifpaf_ros2/install/realsense2_camera_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:/root/openpifpaf_ros2/install/realsense2_camera/lib:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/foxy/opt/yaml_cpp_vendor/lib:/opt/ros/foxy/opt/rviz_ogre_vendor/lib:/opt/ros/foxy/lib/x86_64-linux-gnu:/opt/ros/foxy/lib:/usr/local/11.3.0/lib64:/usr/local/nvidia/lib:/usr/local/nvidia/lib64 PYTHONPATH=/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/opt/ros/foxy/lib/python3.8/site-packages _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/rgbd_openpifpaf_ros2 build --build-base /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/build install --prefix /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2 --record /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/install.log --single-version-externally-managed
+[4.599s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2' for CMake config files
+[4.599s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib'
+[4.600s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/bin'
+[4.600s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/pkgconfig/rgbd_openpifpaf_ros2.pc'
+[4.600s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages'
+[4.600s] Level 1:colcon.colcon_core.shell:create_environment_hook('rgbd_openpifpaf_ros2', 'pythonpath')
+[4.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/hook/pythonpath.ps1'
+[4.604s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/hook/pythonpath.dsv'
+[4.604s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/hook/pythonpath.sh'
+[4.605s] Level 1:colcon.colcon_core.environment:checking '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/bin'
+[4.606s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(rgbd_openpifpaf_ros2)
+[4.609s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/package.ps1'
+[4.610s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/package.dsv'
+[4.610s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/package.sh'
+[4.611s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/package.bash'
+[4.612s] INFO:colcon.colcon_core.shell:Creating package script '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/rgbd_openpifpaf_ros2/package.zsh'
+[4.612s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/share/colcon-core/packages/rgbd_openpifpaf_ros2)
+[4.613s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[4.613s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[4.613s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[4.614s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[4.629s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[4.629s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[4.629s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[4.629s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[4.638s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.ServiceUnknown: The name org.freedesktop.Notifications was not provided by any .service files
+[4.638s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[4.642s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/openpifpaf_ros2/install/local_setup.ps1'
+[4.645s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/openpifpaf_ros2/install/_local_setup_util_ps1.py'
+[4.647s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/openpifpaf_ros2/install/setup.ps1'
+[4.651s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/openpifpaf_ros2/install/local_setup.sh'
+[4.652s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/openpifpaf_ros2/install/_local_setup_util_sh.py'
+[4.653s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/openpifpaf_ros2/install/setup.sh'
+[4.656s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/openpifpaf_ros2/install/local_setup.bash'
+[4.658s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/openpifpaf_ros2/install/setup.bash'
+[4.661s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/openpifpaf_ros2/install/local_setup.zsh'
+[4.662s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/openpifpaf_ros2/install/setup.zsh'

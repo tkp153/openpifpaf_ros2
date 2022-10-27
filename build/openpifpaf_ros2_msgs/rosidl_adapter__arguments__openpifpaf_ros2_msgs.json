@@ -1,0 +1,10 @@
+{
+  "package_name": "openpifpaf_ros2_msgs",
+  "non_idl_tuples": [
+    "/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs:msg/Pose.msg",
+    "/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs:msg/Poses.msg",
+    "/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs:msg/Person.msg",
+    "/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs:msg/Pose3D.msg",
+    "/root/openpifpaf_ros2/src/openpifpaf_ros2_msgs:msg/Pose3DArray.msg"
+  ]
+}

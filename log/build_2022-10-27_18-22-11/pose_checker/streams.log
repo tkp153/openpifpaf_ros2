@@ -1,0 +1,37 @@
+[0.739s] Invoking command in '/root/openpifpaf_ros2/src/pose_checker': PYTHONPATH=/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/pose_checker build --build-base /root/openpifpaf_ros2/build/pose_checker/build install --prefix /root/openpifpaf_ros2/install/pose_checker --record /root/openpifpaf_ros2/build/pose_checker/install.log --single-version-externally-managed
+[1.052s] running egg_info
+[1.052s] creating ../../build/pose_checker/pose_checker.egg-info
+[1.052s] writing ../../build/pose_checker/pose_checker.egg-info/PKG-INFO
+[1.053s] writing dependency_links to ../../build/pose_checker/pose_checker.egg-info/dependency_links.txt
+[1.053s] writing entry points to ../../build/pose_checker/pose_checker.egg-info/entry_points.txt
+[1.053s] writing requirements to ../../build/pose_checker/pose_checker.egg-info/requires.txt
+[1.053s] writing top-level names to ../../build/pose_checker/pose_checker.egg-info/top_level.txt
+[1.055s] writing manifest file '../../build/pose_checker/pose_checker.egg-info/SOURCES.txt'
+[1.096s] reading manifest file '../../build/pose_checker/pose_checker.egg-info/SOURCES.txt'
+[1.097s] writing manifest file '../../build/pose_checker/pose_checker.egg-info/SOURCES.txt'
+[1.097s] running build
+[1.097s] running build_py
+[1.097s] creating /root/openpifpaf_ros2/build/pose_checker/build
+[1.097s] creating /root/openpifpaf_ros2/build/pose_checker/build/lib
+[1.098s] creating /root/openpifpaf_ros2/build/pose_checker/build/lib/pose_checker
+[1.098s] copying pose_checker/pose_checker.py -> /root/openpifpaf_ros2/build/pose_checker/build/lib/pose_checker
+[1.098s] copying pose_checker/__init__.py -> /root/openpifpaf_ros2/build/pose_checker/build/lib/pose_checker
+[1.098s] running install
+[1.099s] running install_lib
+[1.101s] creating /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker
+[1.101s] copying /root/openpifpaf_ros2/build/pose_checker/build/lib/pose_checker/pose_checker.py -> /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker
+[1.101s] copying /root/openpifpaf_ros2/build/pose_checker/build/lib/pose_checker/__init__.py -> /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker
+[1.101s] byte-compiling /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker/pose_checker.py to pose_checker.cpython-38.pyc
+[1.103s] byte-compiling /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker/__init__.py to __init__.cpython-38.pyc
+[1.104s] running install_data
+[1.104s] creating /root/openpifpaf_ros2/install/pose_checker/share/ament_index
+[1.105s] creating /root/openpifpaf_ros2/install/pose_checker/share/ament_index/resource_index
+[1.105s] creating /root/openpifpaf_ros2/install/pose_checker/share/ament_index/resource_index/packages
+[1.105s] copying resource/pose_checker -> /root/openpifpaf_ros2/install/pose_checker/share/ament_index/resource_index/packages
+[1.105s] copying package.xml -> /root/openpifpaf_ros2/install/pose_checker/share/pose_checker
+[1.105s] running install_egg_info
+[1.107s] Copying ../../build/pose_checker/pose_checker.egg-info to /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker-0.0.0-py3.8.egg-info
+[1.109s] running install_scripts
+[1.130s] Installing pose_checker script to /root/openpifpaf_ros2/install/pose_checker/lib/pose_checker
+[1.130s] writing list of installed files to '/root/openpifpaf_ros2/build/pose_checker/install.log'
+[1.156s] Invoked command in '/root/openpifpaf_ros2/src/pose_checker' returned '0': PYTHONPATH=/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/pose_checker build --build-base /root/openpifpaf_ros2/build/pose_checker/build install --prefix /root/openpifpaf_ros2/install/pose_checker --record /root/openpifpaf_ros2/build/pose_checker/install.log --single-version-externally-managed

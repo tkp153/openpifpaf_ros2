@@ -1,0 +1,3 @@
+[console_scripts]
+pose_checker = pose_checker.pose_checker:main
+

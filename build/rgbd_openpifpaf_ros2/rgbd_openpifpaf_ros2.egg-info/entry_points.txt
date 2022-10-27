@@ -1,0 +1,5 @@
+[console_scripts]
+check = rgbd_openpifpaf_ros2.check:main
+person_information = rgbd_openpifpaf_ros2.person_information:main
+rgbd_openpifpaf_ros2_node = rgbd_openpifpaf_ros2.rgbd_openpifpaf_ros2_node:main
+

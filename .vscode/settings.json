@@ -1,8 +1,9 @@
 {
     "cSpell.words": [
         "imgmsg",
+        "keypoint",
         "keypoints",
         "rclpy"
     ],
-    "cmake.sourceDirectory": "${workspaceFolder}/src/navi_cmake_test"
+    "cmake.sourceDirectory": "${workspaceFolder}/build/openpifpaf_ros2_msgs/openpifpaf_ros2_msgs__py"
 }
