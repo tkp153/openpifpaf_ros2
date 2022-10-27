@@ -1,0 +1,23 @@
+[0.728s] Invoking command in '/root/openpifpaf_ros2/src/rgbd_openpifpaf_ros2': AMENT_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/rgbd_openpifpaf_ros2 build --build-base /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/build install --prefix /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2 --record /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/install.log --single-version-externally-managed
+[0.871s] running egg_info
+[0.871s] writing ../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info/PKG-INFO
+[0.872s] writing dependency_links to ../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info/dependency_links.txt
+[0.872s] writing entry points to ../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info/entry_points.txt
+[0.872s] writing requirements to ../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info/requires.txt
+[0.873s] writing top-level names to ../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info/top_level.txt
+[0.898s] reading manifest file '../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info/SOURCES.txt'
+[0.899s] writing manifest file '../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info/SOURCES.txt'
+[0.900s] running build
+[0.900s] running build_py
+[0.900s] running install
+[0.900s] running install_lib
+[0.901s] running install_data
+[0.901s] running install_egg_info
+[0.903s] removing '/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages/rgbd_openpifpaf_ros2-0.0.0-py3.8.egg-info' (and everything under it)
+[0.903s] Copying ../../build/rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2.egg-info to /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages/rgbd_openpifpaf_ros2-0.0.0-py3.8.egg-info
+[0.904s] running install_scripts
+[0.917s] Installing check script to /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/rgbd_openpifpaf_ros2
+[0.917s] Installing person_information script to /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/rgbd_openpifpaf_ros2
+[0.917s] Installing rgbd_openpifpaf_ros2_node script to /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/rgbd_openpifpaf_ros2
+[0.917s] writing list of installed files to '/root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/install.log'
+[0.958s] Invoked command in '/root/openpifpaf_ros2/src/rgbd_openpifpaf_ros2' returned '0': AMENT_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/rgbd_openpifpaf_ros2 build --build-base /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/build install --prefix /root/openpifpaf_ros2/install/rgbd_openpifpaf_ros2 --record /root/openpifpaf_ros2/build/rgbd_openpifpaf_ros2/install.log --single-version-externally-managed

@@ -1,0 +1,37 @@
+[0.790s] Invoking command in '/root/openpifpaf_ros2/src/openpifpaf_ros2_node': AMENT_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/openpifpaf_ros2_node build --build-base /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build install --prefix /root/openpifpaf_ros2/install/openpifpaf_ros2_node --record /root/openpifpaf_ros2/build/openpifpaf_ros2_node/install.log --single-version-externally-managed
+[0.942s] running egg_info
+[0.943s] creating ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info
+[0.943s] writing ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/PKG-INFO
+[0.943s] writing dependency_links to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/dependency_links.txt
+[0.943s] writing entry points to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/entry_points.txt
+[0.943s] writing requirements to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/requires.txt
+[0.943s] writing top-level names to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/top_level.txt
+[0.944s] writing manifest file '../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/SOURCES.txt'
+[0.970s] reading manifest file '../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/SOURCES.txt'
+[0.970s] writing manifest file '../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/SOURCES.txt'
+[0.970s] running build
+[0.970s] running build_py
+[0.971s] creating /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build
+[0.971s] creating /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build/lib
+[0.971s] creating /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build/lib/openpifpaf_ros2_node
+[0.971s] copying openpifpaf_ros2_node/openpifpaf_ros2_node.py -> /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build/lib/openpifpaf_ros2_node
+[0.971s] copying openpifpaf_ros2_node/__init__.py -> /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build/lib/openpifpaf_ros2_node
+[0.972s] running install
+[0.972s] running install_lib
+[0.972s] creating /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node
+[0.972s] copying /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build/lib/openpifpaf_ros2_node/openpifpaf_ros2_node.py -> /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node
+[0.972s] copying /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build/lib/openpifpaf_ros2_node/__init__.py -> /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node
+[0.973s] byte-compiling /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node/openpifpaf_ros2_node.py to openpifpaf_ros2_node.cpython-38.pyc
+[0.974s] byte-compiling /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node/__init__.py to __init__.cpython-38.pyc
+[0.974s] running install_data
+[0.975s] creating /root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/ament_index
+[0.975s] creating /root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/ament_index/resource_index
+[0.976s] creating /root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/ament_index/resource_index/packages
+[0.976s] copying resource/openpifpaf_ros2_node -> /root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/ament_index/resource_index/packages
+[0.976s] copying package.xml -> /root/openpifpaf_ros2/install/openpifpaf_ros2_node/share/openpifpaf_ros2_node
+[0.976s] running install_egg_info
+[0.977s] Copying ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info to /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node-0.0.0-py3.8.egg-info
+[0.978s] running install_scripts
+[0.991s] Installing openpifpaf_ros2_node script to /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/openpifpaf_ros2_node
+[0.992s] writing list of installed files to '/root/openpifpaf_ros2/build/openpifpaf_ros2_node/install.log'
+[1.027s] Invoked command in '/root/openpifpaf_ros2/src/openpifpaf_ros2_node' returned '0': AMENT_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs LD_LIBRARY_PATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages:/root/openpifpaf_ros2/install/openpifpaf_ros2_msgs/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/openpifpaf_ros2_node build --build-base /root/openpifpaf_ros2/build/openpifpaf_ros2_node/build install --prefix /root/openpifpaf_ros2/install/openpifpaf_ros2_node --record /root/openpifpaf_ros2/build/openpifpaf_ros2_node/install.log --single-version-externally-managed
