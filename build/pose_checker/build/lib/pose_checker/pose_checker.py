@@ -89,7 +89,7 @@ class pose_checker(Node):
                 
             #手の上げたのか？
             if(L_Raise_Hand == True or R_Raise_Hand == True ) :
-                print("You are raising hand")  
+                print("You are raising hand\n")  
             
     def deg_checker(self,Point_1,Point_2,Origin):
         
@@ -101,7 +101,12 @@ class pose_checker(Node):
         dot = np.dot(Vector_1,Vector_2)
         cos_theta = dot /(Length_V1 * Length_V2)
         theta = np.arccos(cos_theta) * 180 /np.pi
-        print(theta)        
+    
+        
+        if (theta < 45): 
+            if(Point_1[0] != 0.0 and Point_1[1] != 0.0):
+                if(Point_2[0] != 0.0 and Point_2[0] != 0.0):
+                    return True    
             
 def main():
     

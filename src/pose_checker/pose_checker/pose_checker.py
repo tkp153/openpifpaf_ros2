@@ -5,6 +5,7 @@ import numpy as np
 from openpifpaf_ros2_msgs.msg import Poses,Pose
 import time
 import math
+from sensor_msgs.msg import Twist
 
 class pose_checker(Node):
     def __init__(self):
@@ -56,20 +57,16 @@ class pose_checker(Node):
                 if(k_num == 5 or k_num == 7 or k_num == 7 or k_num == 11):
                     if(k_num == 5):
                         Point_O = np.array([x_pos,y_pos])
-                        #print(Point_O)
                         r_num += 1
                     if(k_num == 7):
                         Point_A = np.array([x_pos,y_pos])
-                        #print(Point_A)
                         r_num += 1
                     if(k_num == 11):
                         Point_O_d = Point_O - np.array([0, 50])
                         Point_B = Point_O_d
-                        #print(Point_B)
                         r_num += 1
                     if(r_num == 3):
                         L_Raise_Hand = self.deg_checker(Point_A, Point_B, Point_O)
-                        #L_Raise_Hand = False
             
                 #右の動き処理
                 if(k_num == 6 or k_num == 8 or k_num == 12 or k_num == 11):
@@ -84,28 +81,32 @@ class pose_checker(Node):
                         l_num += 1
                     if(l_num == 3):
                         R_Raise_Hand = self.deg_checker(Point_C,Point_D, Point_X)
-                        #R_Raise_Hand = False
                 k_num += 1
                 
             #手の上げたのか？
             if(L_Raise_Hand == True or R_Raise_Hand == True ) :
-                print("You are raising hand")  
+                print("You are raising hand\n")
+                  
             
     def deg_checker(self,Point_1,Point_2,Origin):
         
+        # ベクトル生成
         Vector_1 = Point_1 - Origin
         Vector_2 = Point_2 - Origin
+        #ベクトル長さ
         Length_V1 = np.linalg.norm(Vector_1)
         Length_V2 = np.linalg.norm(Vector_2)
-        
+        #内積計算
         dot = np.dot(Vector_1,Vector_2)
+        #COSθを計算
         cos_theta = dot /(Length_V1 * Length_V2)
         theta = np.arccos(cos_theta) * 180 /np.pi
     
-        
-        if (theta < 60): 
-            if(Point_1[0] > 0.0 and Point_1[1] > 0.0):
-                if(Point_2[0] > 0.0 and Point_2[0] > 0.0):
+        # 手をまっすぐに上げたら０度付近になる（多分）
+        if (theta < 45): 
+            #例外処理（データ見つからないい場合除外処理を行う。）
+            if(Point_1[0] != 0.0 and Point_1[1] != 0.0):
+                if(Point_2[0] != 0.0 and Point_2[0] != 0.0):
                     return True    
             
 def main():

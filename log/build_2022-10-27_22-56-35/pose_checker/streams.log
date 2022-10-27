@@ -1,0 +1,24 @@
+[1.259s] Invoking command in '/root/openpifpaf_ros2/src/pose_checker': PYTHONPATH=/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/pose_checker build --build-base /root/openpifpaf_ros2/build/pose_checker/build install --prefix /root/openpifpaf_ros2/install/pose_checker --record /root/openpifpaf_ros2/build/pose_checker/install.log --single-version-externally-managed
+[1.681s] running egg_info
+[1.682s] writing ../../build/pose_checker/pose_checker.egg-info/PKG-INFO
+[1.682s] writing dependency_links to ../../build/pose_checker/pose_checker.egg-info/dependency_links.txt
+[1.682s] writing entry points to ../../build/pose_checker/pose_checker.egg-info/entry_points.txt
+[1.683s] writing requirements to ../../build/pose_checker/pose_checker.egg-info/requires.txt
+[1.683s] writing top-level names to ../../build/pose_checker/pose_checker.egg-info/top_level.txt
+[1.735s] reading manifest file '../../build/pose_checker/pose_checker.egg-info/SOURCES.txt'
+[1.737s] writing manifest file '../../build/pose_checker/pose_checker.egg-info/SOURCES.txt'
+[1.737s] running build
+[1.737s] running build_py
+[1.738s] copying pose_checker/pose_checker.py -> /root/openpifpaf_ros2/build/pose_checker/build/lib/pose_checker
+[1.738s] running install
+[1.739s] running install_lib
+[1.741s] copying /root/openpifpaf_ros2/build/pose_checker/build/lib/pose_checker/pose_checker.py -> /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker
+[1.741s] byte-compiling /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker/pose_checker.py to pose_checker.cpython-38.pyc
+[1.745s] running install_data
+[1.745s] running install_egg_info
+[1.748s] removing '/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker-0.0.0-py3.8.egg-info' (and everything under it)
+[1.748s] Copying ../../build/pose_checker/pose_checker.egg-info to /root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages/pose_checker-0.0.0-py3.8.egg-info
+[1.750s] running install_scripts
+[1.776s] Installing pose_checker script to /root/openpifpaf_ros2/install/pose_checker/lib/pose_checker
+[1.776s] writing list of installed files to '/root/openpifpaf_ros2/build/pose_checker/install.log'
+[1.980s] Invoked command in '/root/openpifpaf_ros2/src/pose_checker' returned '0': PYTHONPATH=/root/openpifpaf_ros2/install/pose_checker/lib/python3.8/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 setup.py egg_info --egg-base ../../build/pose_checker build --build-base /root/openpifpaf_ros2/build/pose_checker/build install --prefix /root/openpifpaf_ros2/install/pose_checker --record /root/openpifpaf_ros2/build/pose_checker/install.log --single-version-externally-managed
