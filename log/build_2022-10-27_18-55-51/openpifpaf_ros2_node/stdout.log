@@ -1,0 +1,20 @@
+running egg_info
+writing ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/PKG-INFO
+writing dependency_links to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/dependency_links.txt
+writing entry points to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/entry_points.txt
+writing requirements to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/requires.txt
+writing top-level names to ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/top_level.txt
+reading manifest file '../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/SOURCES.txt'
+writing manifest file '../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+byte-compiling /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node/openpifpaf_ros2_node.py to openpifpaf_ros2_node.cpython-38.pyc
+running install_data
+running install_egg_info
+removing '/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node-0.0.0-py3.8.egg-info' (and everything under it)
+Copying ../../build/openpifpaf_ros2_node/openpifpaf_ros2_node.egg-info to /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node-0.0.0-py3.8.egg-info
+running install_scripts
+Installing openpifpaf_ros2_node script to /root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/openpifpaf_ros2_node
+writing list of installed files to '/root/openpifpaf_ros2/build/openpifpaf_ros2_node/install.log'
