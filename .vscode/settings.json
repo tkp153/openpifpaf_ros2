@@ -1,8 +1,11 @@
 {
     "cSpell.words": [
+        "asarray",
         "imgmsg",
         "keypoint",
         "keypoints",
+        "linalg",
+        "openpose",
         "rclpy"
     ],
     "cmake.sourceDirectory": "${workspaceFolder}/build/openpifpaf_ros2_msgs/openpifpaf_ros2_msgs__py"

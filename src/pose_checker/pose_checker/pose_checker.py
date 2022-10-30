@@ -107,7 +107,11 @@ class pose_checker(Node):
             #例外処理（データ見つからないい場合除外処理を行う。）
             if(Point_1[0] != 0.0 and Point_1[1] != 0.0):
                 if(Point_2[0] != 0.0 and Point_2[0] != 0.0):
-                    return True    
+                    time_count += 1
+                    if(time_count == 3):
+                        return True
+                    else:
+                        time_count = 0
             
 def main():
     
