@@ -8,5 +8,6 @@
         "openpose",
         "rclpy"
     ],
-    "cmake.sourceDirectory": "${workspaceFolder}/build/openpifpaf_ros2_msgs/openpifpaf_ros2_msgs__py"
+    "cmake.sourceDirectory": "${workspaceFolder}/build/openpifpaf_ros2_msgs/openpifpaf_ros2_msgs__py",
+    "DockerRun.DisableDockerrc": true
 }

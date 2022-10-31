@@ -5,7 +5,7 @@ import numpy as np
 from openpifpaf_ros2_msgs.msg import Poses,Pose
 import time
 import math
-from sensor_msgs.msg import Twist
+from geometry_msgs.msg import Twist
 
 class pose_checker(Node):
     def __init__(self):
@@ -20,6 +20,7 @@ class pose_checker(Node):
         self.sub = self.create_subscription(Poses,"/human_pose",self.callback,qos_profile = video_qos)
         
         self.pub = self.create_publisher(Poses,"pose_status",1)
+        self.count =0
         
         
     def callback(self,poses):
@@ -81,12 +82,17 @@ class pose_checker(Node):
                         l_num += 1
                     if(l_num == 3):
                         R_Raise_Hand = self.deg_checker(Point_C,Point_D, Point_X)
+                        print("check")
+                        
                 k_num += 1
                 
             #手の上げたのか？
-            if(L_Raise_Hand == True or R_Raise_Hand == True ) :
-                print("You are raising hand\n")
-                  
+            if(L_Raise_Hand == True ) :
+                print(time.time())
+                print("You are raising Left hand\n")
+            elif(R_Raise_Hand == True ):
+                print(time.time())
+                print("You are raising Right hand\n")
             
     def deg_checker(self,Point_1,Point_2,Origin):
         
@@ -101,18 +107,19 @@ class pose_checker(Node):
         #COSθを計算
         cos_theta = dot /(Length_V1 * Length_V2)
         theta = np.arccos(cos_theta) * 180 /np.pi
-    
         # 手をまっすぐに上げたら０度付近になる（多分）
         if (theta < 45): 
             #例外処理（データ見つからないい場合除外処理を行う。）
             if(Point_1[0] != 0.0 and Point_1[1] != 0.0):
                 if(Point_2[0] != 0.0 and Point_2[0] != 0.0):
-                    time_count += 1
-                    if(time_count == 3):
+                    self.count += 1
+                    if(self.count > 1):
                         return True
                     else:
-                        time_count = 0
-            
+                        return False
+        else:
+            self.count = 0
+            return False    
 def main():
     
     rclpy.init()
