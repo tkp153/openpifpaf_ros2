@@ -154,7 +154,7 @@ class pose_checker(Node):
         else:
             self.get_logger().error("想定外なエラー発生")
             
-    def robot_stopper(self,Twist):
+    def robot_stopper(self):
         twist = Twist()
         twist.angular.x = 0.000
         twist.linear.z = 0.000
