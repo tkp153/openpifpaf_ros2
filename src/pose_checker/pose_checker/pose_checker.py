@@ -69,7 +69,7 @@ class pose_checker(Node):
                         r_num += 1
                     if(r_num == 3):
                         L_Raise_theta = self.deg_checker(Point_A, Point_B, Point_O)
-                        hand_switch = "Right"
+                        hand_switch = "Left"
                         L_Raise_Hand = self.raise_checker(L_Raise_theta,Point_A, Point_B,hand_switch)
                         
             
@@ -86,7 +86,7 @@ class pose_checker(Node):
                         l_num += 1
                     if(l_num == 3):
                         R_Raise_theta = self.deg_checker(Point_C,Point_D, Point_X)
-                        hand_switch = "Left"
+                        hand_switch = "Right"
                         R_Raise_Hand = self.raise_checker(R_Raise_theta,Point_A,Point_B,hand_switch)
                         
                         
@@ -122,7 +122,7 @@ class pose_checker(Node):
             #手を上げた状態が０度とする。キーポイントが検知していない場合除外を行う処理をする。
             if(theta < 45 
                 and Point_1[0] != 0.0 and Point_1[1] != 0.0 
-                and Point_2[0] != 0.0 and Point_2[1] == 0.0):
+                and Point_2[0] != 0.0 and Point_2[1] != 0.0):
                 
                 self.count_L += 1
                 #2フレーム以上カウントされていたら手を上げている状態にする。
