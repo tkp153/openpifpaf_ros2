@@ -56,7 +56,7 @@ class pose_checker(Node):
                 #print(x_pos,y_pos)
             
                 #左の動き処理
-                if(k_num == 5 or k_num == 7 or k_num == 7 or k_num == 11):
+                if(k_num == 5 or k_num == 7 or k_num == 11):
                     if(k_num == 5):
                         Point_O = np.array([x_pos,y_pos])
                         r_num += 1
@@ -74,7 +74,7 @@ class pose_checker(Node):
                         
             
                 #右の動き処理
-                if(k_num == 6 or k_num == 8 or k_num == 12 or k_num == 11):
+                if(k_num == 6 or k_num == 8 or k_num == 12 ):
                     if(k_num == 6):
                         Point_X = np.array([x_pos,y_pos])
                         l_num += 1
@@ -118,31 +118,41 @@ class pose_checker(Node):
     def raise_checker(self,theta,Point_1,Point_2,hand_switch):
         # 手をまっすぐに上げたら０度付近になる（多分）
         
-        if (theta < 45): 
-            #例外処理（データ見つからないい場合除外処理を行う。）
-            if(Point_1[0] != 0.0 and Point_1[1] != 0.0):
-                if(Point_2[0] != 0.0 and Point_2[0] != 0.0):
+        if(hand_switch == "Left"):
+            #手を上げた状態が０度とする。キーポイントが検知していない場合除外を行う処理をする。
+            if(theta < 45 
+                and Point_1[0] != 0.0 and Point_1[1] != 0.0 
+                and Point_2[0] != 0.0 and Point_2[1] == 0.0):
+                
+                self.count_L += 1
+                #2フレーム以上カウントされていたら手を上げている状態にする。
+                if(self.count_L > 4 ):
+                    return True
+                else:
+                    return False
+                
+            else:
+                self.count_L = 0
+                return False
                     
-                    #右手もしくは左手を判別する。
-                    if(hand_switch == "Left"):
-                        self.count_L += 1
-                        #2フレーム以上カウントされていたら手を上げている状態にする。
-                        if(self.count_L > 1):
-                            return True
-                        else:
-                            return False
-                    elif(hand_switch == "Right"):
-                        self.count_R += 1
-                        if(self.count_R > 1):
-                            return True
-                        else:
-                            return False
-                    else:
-                        self.get_logger().error("out of range")
-                    
+        elif(hand_switch =="Right"):
+            if(theta < 45
+                and Point_1[0] != 0.0 and Point_1[1] != 0.0
+                and Point_2[0] != 0.0 and Point_2[1] != 0.0):
+                
+                self.count_R += 1
+                
+                if(self.count_R > 4):
+                    return True
+                else:
+                    return False
+            else:
+                self.count_R = 0
+                return False
         else:
-            self.count = 0
-            return False    
+            self.get_logger().error("想定外なエラー発生")
+            
+                
 def main():
     
     rclpy.init()
