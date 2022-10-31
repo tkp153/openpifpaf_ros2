@@ -49,7 +49,7 @@ class person_information(Node):
                     
                     
                     
-                elif(k_num == num_keypoints - 1 and point_count == 4): 
+                elif(k_num == num_keypoints - 1 and point_count == 4 ): 
                     #重心計算(標準用)
                     ds.pos_x = x_sum / 4
                     ds.pos_y = y_sum / 4
