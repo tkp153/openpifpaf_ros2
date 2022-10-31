@@ -5,6 +5,7 @@ import numpy as np
 from openpifpaf_ros2_msgs.msg import Poses,Pose
 import time
 import math
+from geometry_msgs.msg import Twist
 
 class pose_checker(Node):
     def __init__(self):
@@ -19,6 +20,8 @@ class pose_checker(Node):
         self.sub = self.create_subscription(Poses,"/human_pose",self.callback,qos_profile = video_qos)
         
         self.pub = self.create_publisher(Poses,"pose_status",1)
+        self.count_L = 0
+        self.count_R = 0
         
         
     def callback(self,poses):
@@ -53,26 +56,25 @@ class pose_checker(Node):
                 #print(x_pos,y_pos)
             
                 #左の動き処理
-                if(k_num == 5 or k_num == 7 or k_num == 7 or k_num == 11):
+                if(k_num == 5 or k_num == 7 or k_num == 11):
                     if(k_num == 5):
                         Point_O = np.array([x_pos,y_pos])
-                        #print(Point_O)
                         r_num += 1
                     if(k_num == 7):
                         Point_A = np.array([x_pos,y_pos])
-                        #print(Point_A)
                         r_num += 1
                     if(k_num == 11):
                         Point_O_d = Point_O - np.array([0, 50])
                         Point_B = Point_O_d
-                        #print(Point_B)
                         r_num += 1
                     if(r_num == 3):
-                        L_Raise_Hand = self.deg_checker(Point_A, Point_B, Point_O)
-                        #L_Raise_Hand = False
+                        L_Raise_theta = self.deg_checker(Point_A, Point_B, Point_O)
+                        hand_switch = "Left"
+                        L_Raise_Hand = self.raise_checker(L_Raise_theta,Point_A, Point_B,hand_switch)
+                        
             
                 #右の動き処理
-                if(k_num == 6 or k_num == 8 or k_num == 12 or k_num == 11):
+                if(k_num == 6 or k_num == 8 or k_num == 12 ):
                     if(k_num == 6):
                         Point_X = np.array([x_pos,y_pos])
                         l_num += 1
@@ -83,31 +85,74 @@ class pose_checker(Node):
                         Point_D = Point_X - np.array([0, 50])
                         l_num += 1
                     if(l_num == 3):
-                        R_Raise_Hand = self.deg_checker(Point_C,Point_D, Point_X)
-                        #R_Raise_Hand = False
+                        R_Raise_theta = self.deg_checker(Point_C,Point_D, Point_X)
+                        hand_switch = "Right"
+                        R_Raise_Hand = self.raise_checker(R_Raise_theta,Point_A,Point_B,hand_switch)
+                        
+                        
                 k_num += 1
                 
             #手の上げたのか？
-            if(L_Raise_Hand == True or R_Raise_Hand == True ) :
-                print("You are raising hand\n")  
+            if(L_Raise_Hand == True ) :
+                print(time.time())
+                print("You are raising Left hand\n")
+            elif(R_Raise_Hand == True ):
+                print(time.time())
+                print("You are raising Right hand\n")
             
     def deg_checker(self,Point_1,Point_2,Origin):
         
+        # ベクトル生成
         Vector_1 = Point_1 - Origin
         Vector_2 = Point_2 - Origin
+        #ベクトル長さ
         Length_V1 = np.linalg.norm(Vector_1)
         Length_V2 = np.linalg.norm(Vector_2)
-        
+        #内積計算
         dot = np.dot(Vector_1,Vector_2)
+        #COSθを計算
         cos_theta = dot /(Length_V1 * Length_V2)
         theta = np.arccos(cos_theta) * 180 /np.pi
-    
+        return theta
         
-        if (theta < 45): 
-            if(Point_1[0] != 0.0 and Point_1[1] != 0.0):
-                if(Point_2[0] != 0.0 and Point_2[0] != 0.0):
-                    return True    
+    def raise_checker(self,theta,Point_1,Point_2,hand_switch):
+        # 手をまっすぐに上げたら０度付近になる（多分）
+        
+        if(hand_switch == "Left"):
+            #手を上げた状態が０度とする。キーポイントが検知していない場合除外を行う処理をする。
+            if(theta < 45 
+                and Point_1[0] != 0.0 and Point_1[1] != 0.0 
+                and Point_2[0] != 0.0 and Point_2[1] != 0.0):
+                
+                self.count_L += 1
+                #2フレーム以上カウントされていたら手を上げている状態にする。
+                if(self.count_L > 4 ):
+                    return True
+                else:
+                    return False
+                
+            else:
+                self.count_L = 0
+                return False
+                    
+        elif(hand_switch =="Right"):
+            if(theta < 45
+                and Point_1[0] != 0.0 and Point_1[1] != 0.0
+                and Point_2[0] != 0.0 and Point_2[1] != 0.0):
+                
+                self.count_R += 1
+                
+                if(self.count_R > 4):
+                    return True
+                else:
+                    return False
+            else:
+                self.count_R = 0
+                return False
+        else:
+            self.get_logger().error("想定外なエラー発生")
             
+                
 def main():
     
     rclpy.init()
