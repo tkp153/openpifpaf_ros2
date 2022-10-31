@@ -19,7 +19,7 @@ class pose_checker(Node):
         #パブリッシャー生成
         self.sub = self.create_subscription(Poses,"/human_pose",self.callback,qos_profile = video_qos)
         
-        self.pub = self.create_publisher(Poses,"pose_status",1)
+        self.pub = self.create_publisher(Twist,"cmd_vel",10)
         self.count_L = 0
         self.count_R = 0
         
@@ -96,9 +96,11 @@ class pose_checker(Node):
             if(L_Raise_Hand == True ) :
                 print(time.time())
                 print("You are raising Left hand\n")
+                self.robot_stopper()
             elif(R_Raise_Hand == True ):
                 print(time.time())
                 print("You are raising Right hand\n")
+                self.robot_stopper()
             
     def deg_checker(self,Point_1,Point_2,Origin):
         
@@ -152,7 +154,13 @@ class pose_checker(Node):
         else:
             self.get_logger().error("想定外なエラー発生")
             
-                
+    def robot_stopper(self,Twist):
+        twist = Twist()
+        twist.angular.x = 0.000
+        twist.linear.z = 0.000
+        self.pub.publish(twist)
+        
+
 def main():
     
     rclpy.init()
