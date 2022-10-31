@@ -48,8 +48,13 @@ class pose_checker_3d(Node):
                 ds.pos_x ,ds.pos_y ,ds.pos_z = Result_Of_Center_Gravity
                 
                 #人の向き計算関数実行
-                self.Person_arrow(self, x_sum_list, y_sum_list, z_sum_list)
+                arrow=self.Person_arrow(self, x_sum_list, y_sum_list, z_sum_list,Result_Of_Center_Gravity)
+                ds.dir_x ,ds.dir_y ,ds.dir_z = arrow
                 
+                ms.poses3d.append(ds)
+                
+        self.pub.publish(ms)
+        
     #重心計算関数
     def CenterOfGravity(self,x_sum,y_sum,z_sum):
         X_data = x_sum
@@ -74,9 +79,40 @@ class pose_checker_3d(Node):
             return CenterOfGravity
             
     #向き計算関数実行
-    def Person_arrow(self,x_info,y_info,z_info):
+    def Person_arrow(self,x_info,y_info,z_info,center):
         x_data = x_info
         y_data = y_info
         z_data = z_info
         
+        #キーポイント検索（キーポイント未検出があるかどうか）
+        # 含まれていなかったらTRUEを返す。
+        X_data_result = 0.0 not in x_data
+        Y_data_result = 0.0 not in y_data
+        Z_data_result = 0.0 not in z_data  
+
+        if (X_data_result == True and Y_data_result == True and Z_data_result == True):
+            #keypoints 5
+            Point_A = np.array([x_data[0],y_data[0],z_data[0]])
+            #keypoints 6
+            Point_B = np.array([x_data[1],y_data[1],z_data[1]])
+            # CenterOfGravity
+            Point_O = center
             
+            Vector_A = Point_A - Point_O
+            Vector_B = Point_B - Point_O
+            
+            Vector_Cross = np.cross(Vector_B,Vector_A)
+            arrow_data = Vector_Cross.T
+            return arrow_data
+        
+def main():
+    rclpy.init()
+    
+    node = pose_checker_3d()
+    
+    rclpy.spin(node)
+    
+    rclpy.shutdown()
+    
+if __name__ == "__main__":
+    main()            
