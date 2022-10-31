@@ -82,7 +82,7 @@ class pose_checker(Node):
                         l_num += 1
                     if(l_num == 3):
                         R_Raise_Hand = self.deg_checker(Point_C,Point_D, Point_X)
-                        print("check")
+                        
                         
                 k_num += 1
                 
@@ -107,11 +107,13 @@ class pose_checker(Node):
         #COSθを計算
         cos_theta = dot /(Length_V1 * Length_V2)
         theta = np.arccos(cos_theta) * 180 /np.pi
+        
         # 手をまっすぐに上げたら０度付近になる（多分）
         if (theta < 45): 
             #例外処理（データ見つからないい場合除外処理を行う。）
             if(Point_1[0] != 0.0 and Point_1[1] != 0.0):
                 if(Point_2[0] != 0.0 and Point_2[0] != 0.0):
+                    print(theta)
                     self.count += 1
                     if(self.count > 1):
                         return True
