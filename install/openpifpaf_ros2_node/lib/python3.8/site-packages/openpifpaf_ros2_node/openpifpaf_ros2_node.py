@@ -15,7 +15,7 @@ class OpenPifPaf_ros2_node(Node):
         #OpenPifPafのモジュール呼び出し
         self.predictor = Predictor()
         #RGBD_camera_typeパラメータ宣言
-        self.declare_parameter('~rgbd_camera_type',"RealSense")
+        self.declare_parameter('~rgbd_camera_type',"Webcam")
         rgbd_camera_type = self.get_parameter('~rgbd_camera_type').value
         
         if(rgbd_camera_type == 'RealSense'):
