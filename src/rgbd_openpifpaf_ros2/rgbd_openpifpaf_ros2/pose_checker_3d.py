@@ -24,9 +24,12 @@ class pose_checker_3d(Node):
             keypoints = np.array(person.keypoints).reshape(-1,4)
             keypoints = keypoints[keypoints[:,3] != 0]
             
+            num_keypoints = len(keypoints)
+            
             x_sum_list= []
             y_sum_list= []
             z_sum_list= []
+            key_points_count = 0
             
             keypoints_count = 0
             for k in keypoints:
@@ -40,10 +43,11 @@ class pose_checker_3d(Node):
                     x_sum_list.append(x_pos)
                     y_sum_list.append(y_pos)
                     z_sum_list.append(z_pos)
+                    key_points_count += 1
                 
             
                 #重心計算処理条件分岐
-                if(keypoints_count == 15):
+                if(keypoints_count == num_keypoints -1 and key_points_count == 4):
                     #重心計算関数実行
                     Result_Of_Center_Gravity = self.CenterOfGravity(x_sum_list, y_sum_list, z_sum_list)
                 
@@ -90,7 +94,7 @@ class pose_checker_3d(Node):
         y_data = y_info
         z_data = z_info
         
-        print(x_data)
+    
         
         #キーポイント検索（キーポイント未検出があるかどうか）
         # 含まれていなかったらTRUEを返す。
