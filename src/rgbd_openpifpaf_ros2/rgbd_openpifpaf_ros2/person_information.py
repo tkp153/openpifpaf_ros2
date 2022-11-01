@@ -10,6 +10,9 @@ class person_information(Node):
         super().__init__("person_information")
         print("person_information initialized")
         
+        video_qos = rclpy.qos.QoSProfile(depth = 10)
+        video_qos.reliability = rclpy.qos.QoSReliabilityPolicy.BEST_EFFORT
+        
         self.sub = self.create_subscription(Poses,"/human_pose_3d",self.callback,1)
         
         self.pub_1 = self.create_publisher(Pose3DArray,"person_information",10)

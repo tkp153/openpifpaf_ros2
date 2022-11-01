@@ -12,6 +12,7 @@ resource/rgbd_openpifpaf_ros2
 rgbd_openpifpaf_ros2/__init__.py
 rgbd_openpifpaf_ros2/check.py
 rgbd_openpifpaf_ros2/person_information.py
+rgbd_openpifpaf_ros2/pose_checker_3d.py
 rgbd_openpifpaf_ros2/rgbd_openpifpaf_ros2_node.py
 test/test_copyright.py
 test/test_flake8.py

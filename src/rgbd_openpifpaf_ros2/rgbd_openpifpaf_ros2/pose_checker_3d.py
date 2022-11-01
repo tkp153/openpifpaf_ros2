@@ -2,14 +2,18 @@ from unittest import result
 import rclpy
 from rclpy.node import Node
 import numpy as np
-from openpifpaf_ros2_msgs import Poses,Pose3DArray,Pose3D
+from openpifpaf_ros2_msgs.msg import Poses,Pose3DArray,Pose3D
 
 class pose_checker_3d(Node):
     def __init__(self):
         super().__init__("pose_checker_3d")
         print("pose_checker_3d")
-        self.sub = self.create_subscription(Poses,"/human_pose_3d",self.callback,1)
-        self.pub = self.create_publisher(Pose3DArray,"pose_checker_3d",10)
+        video_qos = rclpy.qos.QoSProfile(depth = 10)
+        video_qos.reliability = rclpy.qos.QoSReliabilityPolicy.BEST_EFFORT
+        self.sub = self.create_subscription(Poses,"/human_pose_3d",self.callback,qos_profile =video_qos)
+        self.pub = self.create_publisher(Pose3DArray,"pose_checker_3d_A",10)
+        
+        self.human_data = [[],[]]
         
         
     def callback(self,pose):
@@ -18,40 +22,42 @@ class pose_checker_3d(Node):
         for person in pose.poses:
             
             keypoints = np.array(person.keypoints).reshape(-1,4)
-            keypoints = keypoints[keypoints[:3] != 0]
-            num_keypoints = len(keypoints)
+            keypoints = keypoints[keypoints[:,3] != 0]
             
             x_sum_list= []
             y_sum_list= []
             z_sum_list= []
             
             keypoints_count = 0
-        for k in keypoints:
-            ds = Pose3D()
-            float_value = np.array(k[:3] / 100.0,dtype=float)
+            for k in keypoints:
+                ds = Pose3D()
+                float_value = np.array(k[:3] / 100.0,dtype=float)
             
-            x_pos,y_pos,z_pos = float_value
-            #重心のポイント判別
-            if( keypoints_count == 5 or keypoints_count == 6 or keypoints_count == 11 or keypoints_count == 12):
+                x_pos,y_pos,z_pos = float_value
+                #重心のポイント判別
+                if( keypoints_count == 5 or keypoints_count == 6 or keypoints_count == 11 or keypoints_count == 12):
+                    
+                    x_sum_list.append(x_pos)
+                    y_sum_list.append(y_pos)
+                    z_sum_list.append(z_pos)
                 
-                x_sum_list.append(x_pos)
-                y_sum_list.append(y_pos)
-                z_sum_list.append(z_pos)
-                
-            keypoints_count += 1
             
-            #重心計算処理条件分岐
-            if(keypoints_count == num_keypoints - 1):
-                #重心計算関数実行
-                Result_Of_Center_Gravity = self.CenterOfGravity(x_sum_list, y_sum_list, z_sum_list)
+                #重心計算処理条件分岐
+                if(keypoints_count == 15):
+                    #重心計算関数実行
+                    Result_Of_Center_Gravity = self.CenterOfGravity(x_sum_list, y_sum_list, z_sum_list)
                 
-                ds.pos_x ,ds.pos_y ,ds.pos_z = Result_Of_Center_Gravity
+                    ds.pos_x ,ds.pos_y ,ds.pos_z = Result_Of_Center_Gravity
+                    #print(ds.pos_x ,ds.pos_y ,ds.pos_z)
                 
-                #人の向き計算関数実行
-                arrow=self.Person_arrow(self, x_sum_list, y_sum_list, z_sum_list,Result_Of_Center_Gravity)
-                ds.dir_x ,ds.dir_y ,ds.dir_z = arrow
+                    #人の向き計算関数実行
+                    arrow=self.Person_arrow(x_sum_list, y_sum_list, z_sum_list,Result_Of_Center_Gravity)
+                    ds.dir_x ,ds.dir_y ,ds.dir_z = arrow
+                    #print(ds.dir_x ,ds.dir_y ,ds.dir_z)
                 
-                ms.poses3d.append(ds)
+                    ms.poses3d.append(ds)
+            
+                keypoints_count += 1
                 
         self.pub.publish(ms)
         
@@ -70,19 +76,21 @@ class pose_checker_3d(Node):
         if(X_data_result == True and Y_data_result == True and Z_data_result == True):
             
             #重心計算
-            X_Center = X_data.sum() / 4 
-            Y_Center = Y_data.sum() / 4
-            Z_Center = Z_data.sum() / 4
+            X_Center = sum(X_data) / 4 
+            Y_Center = sum(Y_data) / 4
+            Z_Center = sum(Z_data) / 4
             
             CenterOfGravity = np.array([X_Center, Y_Center, Z_Center])
             
             return CenterOfGravity
             
-    #向き計算関数実行
+    #向き計算関数
     def Person_arrow(self,x_info,y_info,z_info,center):
         x_data = x_info
         y_data = y_info
         z_data = z_info
+        
+        print(x_data)
         
         #キーポイント検索（キーポイント未検出があるかどうか）
         # 含まれていなかったらTRUEを返す。
@@ -104,7 +112,11 @@ class pose_checker_3d(Node):
             Vector_Cross = np.cross(Vector_B,Vector_A)
             arrow_data = Vector_Cross.T
             return arrow_data
-        
+    
+    #人速度計算関数
+    def Person_velocity(self,center):
+        data = center
+            
 def main():
     rclpy.init()
     
