@@ -10,6 +10,9 @@ class person_information(Node):
         super().__init__("person_information")
         print("person_information initialized")
         
+        video_qos = rclpy.qos.QoSProfile(depth = 10)
+        video_qos.reliability = rclpy.qos.QoSReliabilityPolicy.BEST_EFFORT
+        
         self.sub = self.create_subscription(Poses,"/human_pose_3d",self.callback,1)
         
         self.pub_1 = self.create_publisher(Pose3DArray,"person_information",10)
@@ -49,7 +52,7 @@ class person_information(Node):
                     
                     
                     
-                elif(k_num == num_keypoints - 1 and point_count == 4): 
+                elif(k_num == num_keypoints - 1 and point_count == 4 ): 
                     #重心計算(標準用)
                     ds.pos_x = x_sum / 4
                     ds.pos_y = y_sum / 4

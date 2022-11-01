@@ -29,7 +29,7 @@ class rgbd_openpifpaf_ros2_node(Node):
             self.declare_parameter('~in_depth_topic',"/depth_to_rgb/image_raw")
             self.declare_parameter('~in_pose_topic',"/human_pose")
             self.declare_parameter('~out_topic',"human_pose_3d")
-            self.declare_parameter('~qos_profile',"good")
+            self.declare_parameter('~qos_profile',"best")
         
         
         #パラメータ読み込み
