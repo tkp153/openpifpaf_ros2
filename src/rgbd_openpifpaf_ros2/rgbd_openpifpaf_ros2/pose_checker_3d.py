@@ -18,6 +18,7 @@ class pose_checker_3d(Node):
         
     def callback(self,pose):
         ms = Pose3DArray()
+        person_id = 0
         
         for person in pose.poses:
             
@@ -62,7 +63,7 @@ class pose_checker_3d(Node):
                     ms.poses3d.append(ds)
             
                 keypoints_count += 1
-                
+        person_id += 1         
         self.pub.publish(ms)
         
     #重心計算関数
@@ -118,8 +119,26 @@ class pose_checker_3d(Node):
             return arrow_data
     
     #人速度計算関数
-    def Person_velocity(self,center):
+    def Person_velocity(self,center,id):
         data = center
+        person_id =  id
+        second = []
+        first = []
+        
+        data_tolist = data.Tolist()
+        
+        self.human_data[person_id].extend(data_tolist)
+        
+        if(len(self.human_data[person_id]) == 5):
+            # Vt(x,y,z)
+            second[0] = self.human_data[person_id][3]
+            second[1] = self.human_data[person_id][4]
+            second[2] = self.human_data[person_id][5]
+            
+            # Vo(x,y,z)
+            first[0] = self.human_data[person_id][0]
+            first[1] = self.human_data[person_id][1]
+            first[2] = self.human_data[person_id][2]
             
 def main():
     rclpy.init()
