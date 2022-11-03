@@ -1,8 +1,10 @@
-from unittest import result
+
 import rclpy
 from rclpy.node import Node
 import numpy as np
 from openpifpaf_ros2_msgs.msg import Poses,Pose3DArray,Pose3D
+import math
+import time
 
 class pose_checker_3d(Node):
     def __init__(self):
@@ -59,6 +61,10 @@ class pose_checker_3d(Node):
                     arrow=self.Person_arrow(x_sum_list, y_sum_list, z_sum_list,Result_Of_Center_Gravity)
                     ds.dir_x ,ds.dir_y ,ds.dir_z = arrow
                     #print(ds.dir_x ,ds.dir_y ,ds.dir_z)
+                    
+                    #速度計算関数実行
+                    time_now = time.time()
+                    velocity_check = self.Person_velocity_check(Result_Of_Center_Gravity,person_id,time_now)
                 
                     ms.poses3d.append(ds)
             
@@ -90,7 +96,7 @@ class pose_checker_3d(Node):
             return CenterOfGravity
             
     #向き計算関数
-    def Person_arrow(self,x_info,y_info,z_info,center):
+    def Person_arrow(self,x_info,y_info,z_info,center,):
         x_data = x_info
         y_data = y_info
         z_data = z_info
@@ -119,27 +125,56 @@ class pose_checker_3d(Node):
             return arrow_data
     
     #人速度計算関数
-    def Person_velocity(self,center,id):
+    def Person_velocity_check(self,center,id,time):
+        #情報入手
         data = center
         person_id =  id
+        time_data = time
         second = []
         first = []
-        
+        status = ""
+        #リスト型変換処理
         data_tolist = data.Tolist()
         
+        #データ追加処理
         self.human_data[person_id].extend(data_tolist)
+        self.human_data[person_id].append(time_data)
         
-        if(len(self.human_data[person_id]) == 5):
-            # Vt(x,y,z)
-            second[0] = self.human_data[person_id][3]
-            second[1] = self.human_data[person_id][4]
-            second[2] = self.human_data[person_id][5]
+        if(len(self.human_data[person_id]) == 11):
+            # Vt(x,y,z) and time_data
+            second[0] = self.human_data[person_id][8]
+            second[1] = self.human_data[person_id][9]
+            second[2] = self.human_data[person_id][10]
+            second[3] = self.human_data[person_id][11]
             
-            # Vo(x,y,z)
+            # Vo(x,y,z) and time_data
             first[0] = self.human_data[person_id][0]
             first[1] = self.human_data[person_id][1]
             first[2] = self.human_data[person_id][2]
+            first[3] = self.human_data[person_id][3]
             
+            #速度計算
+            first_r = math.sqrt(math.pow(first[0],2) + math.pow(first[1],2) + math.pow(first[2],2))
+            second_r = math.sqrt(math.pow(second[0],2) + math.pow(second[1],2) + math.pow(second[2],2))
+            first_time = first[3]
+            second_time = second[3]
+            velocity = (second_r - first_r) / (second_time - first_time)
+            
+            #後片付け処理(最初のデータ削除)
+            del self.person_data[person_id][0:5]
+            print(velocity)
+            
+            if(velocity < 1 and velocity > -1 ):
+                status = "stopped"
+            elif(velocity > -5 and velocity < 5):
+                status = "walking"
+            elif(velocity > 5 and velocity < -5):
+                status = "running"
+            else:
+                self.get_logger().info("???")    
+            return status
+
+#めいん関数
 def main():
     rclpy.init()
     
