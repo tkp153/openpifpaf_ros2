@@ -5698,6 +5698,10 @@ fstream
 iomanip
 -
 
+/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera/src/dynamic_params.cpp
+dynamic_params.h
+-
+
 /root/openpifpaf_ros2/src/realsense-ros/realsense2_camera/src/realsense_node_factory.cpp
 realsense_node_factory.h
 /root/openpifpaf_ros2/src/realsense-ros/realsense2_camera/src/realsense_node_factory.h
@@ -5719,6 +5723,10 @@ thread
 -
 regex
 -
+
+/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera/src/ros_param_backend_foxy.cpp
+ros_param_backend.h
+/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera/src/ros_param_backend.h
 
 /root/openpifpaf_ros2/src/realsense-ros/realsense2_camera/src/t265_realsense_node.cpp
 t265_realsense_node.h
