@@ -1,3 +1,0 @@
-[console_scripts]
-openpifpaf_ros2_node = openpifpaf_ros2_node.openpifpaf_ros2_node:main
-
