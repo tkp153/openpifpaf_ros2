@@ -1,0 +1,94 @@
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake: 0.9.11 (/opt/ros/foxy/share/ament_cmake/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.8.10", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 2.4.2 (/opt/ros/foxy/share/rclcpp/cmake)
+-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+-- Found rosidl_adapter: 1.3.0 (/opt/ros/foxy/share/rosidl_adapter/cmake)
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.1.1f")  
+-- Found FastRTPS: /opt/ros/foxy/include  
+-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+-- Found rmw_implementation_cmake: 1.0.3 (/opt/ros/foxy/share/rmw_implementation_cmake/cmake)
+-- Using RMW implementation 'rmw_fastrtps_cpp' as default
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Failed
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Found sensor_msgs: 2.0.5 (/opt/ros/foxy/share/sensor_msgs/cmake)
+-- Found visualization_msgs: 2.0.5 (/opt/ros/foxy/share/visualization_msgs/cmake)
+-- Found image_transport: 2.4.0 (/opt/ros/foxy/share/image_transport/cmake)
+-- Found tf2: 0.13.13 (/opt/ros/foxy/share/tf2/cmake)
+-- Found tf2_ros: 0.13.13 (/opt/ros/foxy/share/tf2_ros/cmake)
+-- Found tf2_geometry_msgs: 0.13.13 (/opt/ros/foxy/share/tf2_geometry_msgs/cmake)
+-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/foxy/share/eigen3_cmake_module/cmake)
+-- Found Eigen3: TRUE (found version "3.3.7") 
+-- Found cv_bridge: 3.0.6 (/opt/ros/foxy/share/cv_bridge/cmake)
+Finding K4A SDK binaries
+!!! Body Tracking SDK not found: body tracking features will not be available !!!
+K4A Libs: k4a::k4a;k4a::k4arecord
+K4A DLLs: /usr/lib/x86_64-linux-gnu/libk4a.so.1.4.1;/usr/lib/x86_64-linux-gnu/libk4arecord.so.1.4.1
+K4A Install Needed: FALSE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /root/openpifpaf_ros2/build/azure_kinect_ros_driver
+[35m[1mScanning dependencies of target azure_kinect_ros_driver_node[0m
+[ 20%] [32mBuilding CXX object CMakeFiles/azure_kinect_ros_driver_node.dir/src/k4a_ros_bridge_node.cpp.o[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/azure_kinect_ros_driver_node.dir/src/k4a_ros_device.cpp.o[0m
+[ 60%] [32mBuilding CXX object CMakeFiles/azure_kinect_ros_driver_node.dir/src/k4a_ros_device_params.cpp.o[0m
+[ 80%] [32mBuilding CXX object CMakeFiles/azure_kinect_ros_driver_node.dir/src/k4a_calibration_transform_data.cpp.o[0m
+[01m[K/root/openpifpaf_ros2/src/Azure_Kinect_ROS_Driver/src/k4a_ros_device.cpp:[m[K In constructor ‘[01m[KK4AROSDevice::K4AROSDevice()[m[K’:
+[01m[K/root/openpifpaf_ros2/src/Azure_Kinect_ROS_Driver/src/k4a_ros_device.cpp:197:14:[m[K [01;35m[Kwarning: [m[Kcatching polymorphic type ‘[01m[Kclass std::exception[m[K’ by value [[01;35m[K-Wcatch-value=[m[K]
+  197 |       catch ([01;35m[Kexception[m[K)
+      |              [01;35m[K^~~~~~~~~[m[K
+[01m[K/root/openpifpaf_ros2/src/Azure_Kinect_ROS_Driver/src/k4a_ros_device.cpp:[m[K In member function ‘[01m[Kvoid K4AROSDevice::framePublisherThread()[m[K’:
+[01m[K/root/openpifpaf_ros2/src/Azure_Kinect_ROS_Driver/src/k4a_ros_device.cpp:866:21:[m[K [01;35m[Kwarning: [m[Kunused variable ‘[01m[Kwait_result[m[K’ [[01;35m[K-Wunused-variable[m[K]
+  866 |   k4a_wait_result_t [01;35m[Kwait_result[m[K;
+      |                     [01;35m[K^~~~~~~~~~~[m[K
+[01m[K/root/openpifpaf_ros2/src/Azure_Kinect_ROS_Driver/src/k4a_ros_device.cpp:[m[K In member function ‘[01m[Kvoid K4AROSDevice::imuPublisherThread()[m[K’:
+[01m[K/root/openpifpaf_ros2/src/Azure_Kinect_ROS_Driver/src/k4a_ros_device.cpp:1352:34:[m[K [01;35m[Kwarning: [m[Kcomparison of integer expressions of different signedness: ‘[01m[Kstd::__atomic_base<long unsigned int>::__int_type[m[K’ {aka ‘[01m[Klong unsigned int[m[K’} and ‘[01m[Kstd::__atomic_base<long int>::__int_type[m[K’ {aka ‘[01m[Klong int[m[K’} [[01;35m[K-Wsign-compare[m[K]
+ 1352 |       while ([01;35m[Klast_imu_time_usec_ <= last_capture_time_usec_[m[K && !imu_stream_end_of_file_)
+      |              [01;35m[K~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[100%] [32m[1mLinking CXX executable node[0m
+[100%] Built target azure_kinect_ros_driver_node
+-- Install configuration: ""
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/lib/azure_kinect_ros_driver/node
+-- Set runtime path of "/root/openpifpaf_ros2/install/azure_kinect_ros_driver/lib/azure_kinect_ros_driver/node" to ""
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver//launch
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver//launch/driver.launch.py
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver//launch/slam_rtabmap.launch
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver//launch/rectify_test.launch
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver//urdf
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver//urdf/azure_kinect.urdf.xacro
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/ament_index/resource_index/package_run_dependencies/azure_kinect_ros_driver
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/ament_index/resource_index/parent_prefix_path/azure_kinect_ros_driver
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/environment/ament_prefix_path.sh
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/environment/ament_prefix_path.dsv
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/environment/path.sh
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/environment/path.dsv
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/local_setup.bash
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/local_setup.sh
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/local_setup.zsh
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/local_setup.dsv
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/package.dsv
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/ament_index/resource_index/packages/azure_kinect_ros_driver
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/cmake/azure_kinect_ros_driverConfig.cmake
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/cmake/azure_kinect_ros_driverConfig-version.cmake
+-- Installing: /root/openpifpaf_ros2/install/azure_kinect_ros_driver/share/azure_kinect_ros_driver/package.xml

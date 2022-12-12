@@ -275,7 +275,7 @@ PYTHON_VERSION:STRING=
 SET_USER_BREAK_AT_STARTUP:BOOL=OFF
 
 //Name of the computer/site where compile is being run
-SITE:STRING=tkp153
+SITE:STRING=tkp153-P65-Creator-8RE
 
 //Path to a file.
 TINYXML2_INCLUDE_DIR:PATH=/usr/include

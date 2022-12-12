@@ -2,8 +2,7 @@ import rclpy
 from rclpy.node import Node
 import numpy as np
 from openpifpaf_ros2_msgs.msg import Poses,Pose3DArray,Pose3D
-import time
-import math
+
 
 class person_information(Node):
     def __init__(self):
