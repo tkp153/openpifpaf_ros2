@@ -24,8 +24,7 @@ class check(Node):
         self.sub = self.create_subscription(Poses,in_topic,self.callback_x,1)
         self.pub = self.create_publisher(MarkerArray,"/pose_vis",10)
         
-        
-    #Todo need update this functions   
+
     def callback_x(self,pose):
         ms = MarkerArray()
         

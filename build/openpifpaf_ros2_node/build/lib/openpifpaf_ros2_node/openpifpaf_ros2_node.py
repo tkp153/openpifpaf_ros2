@@ -20,28 +20,22 @@ class OpenPifPaf_ros2_node(Node):
         
         if(rgbd_camera_type == 'RealSense'):
             #パラメータ宣言(RealSense)
-            self.declare_parameter('~in_topic',"/camera/color/image_raw")
-            self.declare_parameter('~out_topic',"human_pose")
-            self.declare_parameter('~scale','1.0')
-            self.declare_parameter('~qos_profile',"best")
+            in_topic ="/camera/color/image_raw"
+            out_topic ="human_pose"
+            scale = 1.0
+            qos_profile ="best"
         elif(rgbd_camera_type =='Kinect'):
             #パラメータ宣言（Kinect）
-            self.declare_parameter('~in_topic',"/rgb/image_raw")
-            self.declare_parameter('~out_topic',"human_pose")
-            self.declare_parameter('~scale','1.0')
-            self.declare_parameter('~qos_profile',"best")
+            in_topic  = "/rgb/image_raw"
+            out_topic = "human_pose"
+            scale = 1.0
+            qos_profile = "best"
             
         elif(rgbd_camera_type == 'Webcam'):
-            self.declare_parameter('~in_topic','/image_raw')
-            self.declare_parameter('~out_topic',"human_pose")
-            self.declare_parameter('~scale','1.0')
-            self.declare_parameter('~qos_profile',"best")
-        
-        #パラメータ読み込み
-        in_topic =self.get_parameter('~in_topic').value
-        out_topic =self.get_parameter('~out_topic').value
-        scale = self.get_parameter('~scale').value
-        qos_profile = self.get_parameter('~qos_profile').value
+            in_topic = '/image_raw'
+            out_topic = "human_pose"
+            scale = 1.0
+            qos_profile = "best"
         
         
         if(qos_profile == "best"):

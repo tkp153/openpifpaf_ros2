@@ -139,7 +139,7 @@ librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/t265_realsense_nod
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/dynamic_params.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/src/ros_param_backend_foxy.cpp.o
 librealsense2_camera.so: CMakeFiles/realsense2_camera.dir/build.make
-librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/librealsense2.so.2.51.1
+librealsense2_camera.so: /usr/lib/x86_64-linux-gnu/librealsense2.so.2.53.1
 librealsense2_camera.so: /root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_c.so
 librealsense2_camera.so: /root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_c.so
 librealsense2_camera.so: /root/openpifpaf_ros2/install/realsense2_camera_msgs/lib/librealsense2_camera_msgs__rosidl_typesupport_introspection_cpp.so
