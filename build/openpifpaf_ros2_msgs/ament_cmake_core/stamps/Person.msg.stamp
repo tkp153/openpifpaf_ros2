@@ -1,3 +1,0 @@
-visualization_msgs/MarkerArray markers
-int32  person_id
-int32 human_person_num

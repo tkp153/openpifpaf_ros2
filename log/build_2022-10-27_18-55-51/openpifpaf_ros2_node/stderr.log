@@ -1,5 +1,0 @@
-  File "/root/openpifpaf_ros2/install/openpifpaf_ros2_node/lib/python3.8/site-packages/openpifpaf_ros2_node/openpifpaf_ros2_node.py", line 45
-    ages/pkg_resources/__init__.py", line 490, in load_entry_point
-                                                                 ^
-SyntaxError: EOL while scanning string literal
-
