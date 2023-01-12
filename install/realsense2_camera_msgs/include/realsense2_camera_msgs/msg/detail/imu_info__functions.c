@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "rcutils/allocator.h"
-
 
 // Include directives for member types
 // Member `header`
@@ -110,15 +108,14 @@ realsense2_camera_msgs__msg__IMUInfo__copy(
 realsense2_camera_msgs__msg__IMUInfo *
 realsense2_camera_msgs__msg__IMUInfo__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__msg__IMUInfo * msg = (realsense2_camera_msgs__msg__IMUInfo *)allocator.allocate(sizeof(realsense2_camera_msgs__msg__IMUInfo), allocator.state);
+  realsense2_camera_msgs__msg__IMUInfo * msg = (realsense2_camera_msgs__msg__IMUInfo *)malloc(sizeof(realsense2_camera_msgs__msg__IMUInfo));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(realsense2_camera_msgs__msg__IMUInfo));
   bool success = realsense2_camera_msgs__msg__IMUInfo__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -127,11 +124,10 @@ realsense2_camera_msgs__msg__IMUInfo__create()
 void
 realsense2_camera_msgs__msg__IMUInfo__destroy(realsense2_camera_msgs__msg__IMUInfo * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     realsense2_camera_msgs__msg__IMUInfo__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -141,11 +137,9 @@ realsense2_camera_msgs__msg__IMUInfo__Sequence__init(realsense2_camera_msgs__msg
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   realsense2_camera_msgs__msg__IMUInfo * data = NULL;
-
   if (size) {
-    data = (realsense2_camera_msgs__msg__IMUInfo *)allocator.zero_allocate(size, sizeof(realsense2_camera_msgs__msg__IMUInfo), allocator.state);
+    data = (realsense2_camera_msgs__msg__IMUInfo *)calloc(size, sizeof(realsense2_camera_msgs__msg__IMUInfo));
     if (!data) {
       return false;
     }
@@ -162,7 +156,7 @@ realsense2_camera_msgs__msg__IMUInfo__Sequence__init(realsense2_camera_msgs__msg
       for (; i > 0; --i) {
         realsense2_camera_msgs__msg__IMUInfo__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -178,8 +172,6 @@ realsense2_camera_msgs__msg__IMUInfo__Sequence__fini(realsense2_camera_msgs__msg
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -187,7 +179,7 @@ realsense2_camera_msgs__msg__IMUInfo__Sequence__fini(realsense2_camera_msgs__msg
     for (size_t i = 0; i < array->capacity; ++i) {
       realsense2_camera_msgs__msg__IMUInfo__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -201,14 +193,13 @@ realsense2_camera_msgs__msg__IMUInfo__Sequence__fini(realsense2_camera_msgs__msg
 realsense2_camera_msgs__msg__IMUInfo__Sequence *
 realsense2_camera_msgs__msg__IMUInfo__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__msg__IMUInfo__Sequence * array = (realsense2_camera_msgs__msg__IMUInfo__Sequence *)allocator.allocate(sizeof(realsense2_camera_msgs__msg__IMUInfo__Sequence), allocator.state);
+  realsense2_camera_msgs__msg__IMUInfo__Sequence * array = (realsense2_camera_msgs__msg__IMUInfo__Sequence *)malloc(sizeof(realsense2_camera_msgs__msg__IMUInfo__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = realsense2_camera_msgs__msg__IMUInfo__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -217,11 +208,10 @@ realsense2_camera_msgs__msg__IMUInfo__Sequence__create(size_t size)
 void
 realsense2_camera_msgs__msg__IMUInfo__Sequence__destroy(realsense2_camera_msgs__msg__IMUInfo__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     realsense2_camera_msgs__msg__IMUInfo__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool

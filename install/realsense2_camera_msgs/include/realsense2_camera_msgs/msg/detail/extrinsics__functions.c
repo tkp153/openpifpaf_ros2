@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "rcutils/allocator.h"
-
 
 // Include directives for member types
 // Member `header`
@@ -98,15 +96,14 @@ realsense2_camera_msgs__msg__Extrinsics__copy(
 realsense2_camera_msgs__msg__Extrinsics *
 realsense2_camera_msgs__msg__Extrinsics__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__msg__Extrinsics * msg = (realsense2_camera_msgs__msg__Extrinsics *)allocator.allocate(sizeof(realsense2_camera_msgs__msg__Extrinsics), allocator.state);
+  realsense2_camera_msgs__msg__Extrinsics * msg = (realsense2_camera_msgs__msg__Extrinsics *)malloc(sizeof(realsense2_camera_msgs__msg__Extrinsics));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(realsense2_camera_msgs__msg__Extrinsics));
   bool success = realsense2_camera_msgs__msg__Extrinsics__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -115,11 +112,10 @@ realsense2_camera_msgs__msg__Extrinsics__create()
 void
 realsense2_camera_msgs__msg__Extrinsics__destroy(realsense2_camera_msgs__msg__Extrinsics * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     realsense2_camera_msgs__msg__Extrinsics__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -129,11 +125,9 @@ realsense2_camera_msgs__msg__Extrinsics__Sequence__init(realsense2_camera_msgs__
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   realsense2_camera_msgs__msg__Extrinsics * data = NULL;
-
   if (size) {
-    data = (realsense2_camera_msgs__msg__Extrinsics *)allocator.zero_allocate(size, sizeof(realsense2_camera_msgs__msg__Extrinsics), allocator.state);
+    data = (realsense2_camera_msgs__msg__Extrinsics *)calloc(size, sizeof(realsense2_camera_msgs__msg__Extrinsics));
     if (!data) {
       return false;
     }
@@ -150,7 +144,7 @@ realsense2_camera_msgs__msg__Extrinsics__Sequence__init(realsense2_camera_msgs__
       for (; i > 0; --i) {
         realsense2_camera_msgs__msg__Extrinsics__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -166,8 +160,6 @@ realsense2_camera_msgs__msg__Extrinsics__Sequence__fini(realsense2_camera_msgs__
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -175,7 +167,7 @@ realsense2_camera_msgs__msg__Extrinsics__Sequence__fini(realsense2_camera_msgs__
     for (size_t i = 0; i < array->capacity; ++i) {
       realsense2_camera_msgs__msg__Extrinsics__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -189,14 +181,13 @@ realsense2_camera_msgs__msg__Extrinsics__Sequence__fini(realsense2_camera_msgs__
 realsense2_camera_msgs__msg__Extrinsics__Sequence *
 realsense2_camera_msgs__msg__Extrinsics__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__msg__Extrinsics__Sequence * array = (realsense2_camera_msgs__msg__Extrinsics__Sequence *)allocator.allocate(sizeof(realsense2_camera_msgs__msg__Extrinsics__Sequence), allocator.state);
+  realsense2_camera_msgs__msg__Extrinsics__Sequence * array = (realsense2_camera_msgs__msg__Extrinsics__Sequence *)malloc(sizeof(realsense2_camera_msgs__msg__Extrinsics__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = realsense2_camera_msgs__msg__Extrinsics__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -205,11 +196,10 @@ realsense2_camera_msgs__msg__Extrinsics__Sequence__create(size_t size)
 void
 realsense2_camera_msgs__msg__Extrinsics__Sequence__destroy(realsense2_camera_msgs__msg__Extrinsics__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     realsense2_camera_msgs__msg__Extrinsics__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool

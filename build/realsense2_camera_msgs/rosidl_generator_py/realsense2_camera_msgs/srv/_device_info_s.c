@@ -246,7 +246,7 @@ PyObject * realsense2_camera_msgs__srv__device_info__response__convert_to_py(voi
     field = PyUnicode_DecodeUTF8(
       ros_message->device_name.data,
       strlen(ros_message->device_name.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }
@@ -263,7 +263,7 @@ PyObject * realsense2_camera_msgs__srv__device_info__response__convert_to_py(voi
     field = PyUnicode_DecodeUTF8(
       ros_message->serial_number.data,
       strlen(ros_message->serial_number.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }
@@ -280,7 +280,7 @@ PyObject * realsense2_camera_msgs__srv__device_info__response__convert_to_py(voi
     field = PyUnicode_DecodeUTF8(
       ros_message->firmware_version.data,
       strlen(ros_message->firmware_version.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }
@@ -297,7 +297,7 @@ PyObject * realsense2_camera_msgs__srv__device_info__response__convert_to_py(voi
     field = PyUnicode_DecodeUTF8(
       ros_message->usb_type_descriptor.data,
       strlen(ros_message->usb_type_descriptor.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }
@@ -314,7 +314,7 @@ PyObject * realsense2_camera_msgs__srv__device_info__response__convert_to_py(voi
     field = PyUnicode_DecodeUTF8(
       ros_message->firmware_update_id.data,
       strlen(ros_message->firmware_update_id.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }
@@ -331,7 +331,7 @@ PyObject * realsense2_camera_msgs__srv__device_info__response__convert_to_py(voi
     field = PyUnicode_DecodeUTF8(
       ros_message->sensors.data,
       strlen(ros_message->sensors.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }

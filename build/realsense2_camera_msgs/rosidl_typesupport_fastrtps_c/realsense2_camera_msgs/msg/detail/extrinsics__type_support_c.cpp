@@ -132,7 +132,7 @@ static bool _Extrinsics__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_realsense2_camera_msgs
 size_t get_serialized_size_realsense2_camera_msgs__msg__Extrinsics(

@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC   -Wall -std=gnu++14
 
 CXX_DEFINES = -DRCUTILS_ENABLE_FAULT_INJECTION -DROS_PACKAGE_NAME=\"openpifpaf_ros2_msgs\" -Dopenpifpaf_ros2_msgs__rosidl_typesupport_cpp_EXPORTS
 
-CXX_INCLUDES = -I/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs/rosidl_generator_cpp -isystem /opt/ros/foxy/include 
+CXX_INCLUDES = -I/root/openpifpaf_ros2/build/openpifpaf_ros2_msgs/rosidl_generator_cpp -isystem /opt/ros/galactic/include 
 

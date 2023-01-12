@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.hpp
+/opt/ros/galactic/include/builtin_interfaces/msg/detail/duration__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -22,7 +22,7 @@ string
 vector
 -
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.hpp
+/opt/ros/galactic/include/builtin_interfaces/msg/detail/time__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -38,7 +38,7 @@ string
 vector
 -
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.hpp
+/opt/ros/galactic/include/geometry_msgs/msg/detail/point__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -54,7 +54,7 @@ string
 vector
 -
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.hpp
+/opt/ros/galactic/include/geometry_msgs/msg/detail/pose__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -70,11 +70,11 @@ string
 vector
 -
 geometry_msgs/msg/detail/point__struct.hpp
-/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.hpp
+/opt/ros/galactic/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.hpp
 geometry_msgs/msg/detail/quaternion__struct.hpp
-/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/quaternion__struct.hpp
+/opt/ros/galactic/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/quaternion__struct.hpp
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.hpp
+/opt/ros/galactic/include/geometry_msgs/msg/detail/quaternion__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -90,7 +90,7 @@ string
 vector
 -
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.hpp
+/opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -106,17 +106,17 @@ string
 vector
 -
 
-/opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
+/opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_typesupport_interface/macros.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_runtime_cpp/bounded_vector.hpp
+/opt/ros/galactic/include/rosidl_runtime_cpp/bounded_vector.hpp
 algorithm
 -
 memory
@@ -128,53 +128,53 @@ utility
 vector
 -
 
-/opt/ros/foxy/include/rosidl_runtime_cpp/message_initialization.hpp
+/opt/ros/galactic/include/rosidl_runtime_cpp/message_initialization.hpp
 rosidl_runtime_c/message_initialization.h
 -
 
-/opt/ros/foxy/include/rosidl_typesupport_cpp/message_type_support.hpp
+/opt/ros/galactic/include/rosidl_typesupport_cpp/message_type_support.hpp
 rosidl_runtime_c/message_type_support_struct.h
 -
 rosidl_runtime_c/visibility_control.h
 -
 
-/opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/field_types.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
 stdint.h
 -
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/field_types.hpp
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/field_types.hpp
 rosidl_typesupport_introspection_c/field_types.h
 -
 cstdint
 -
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/identifier.hpp
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/identifier.hpp
 rosidl_typesupport_introspection_cpp/visibility_control.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_introspection.hpp
 cstddef
 -
 cstdint
 -
 rosidl_runtime_c/message_type_support_struct.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_cpp/message_initialization.hpp
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/rosidl_runtime_cpp/message_initialization.hpp
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/rosidl_runtime_cpp/message_initialization.hpp
 rosidl_typesupport_introspection_cpp/visibility_control.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/message_type_support_decl.hpp
 rosidl_runtime_c/message_type_support_struct.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_introspection_cpp/visibility_control.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/rosidl_typesupport_introspection_cpp/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_cpp/visibility_control.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_cpp/visibility_control.h
 
-/opt/ros/foxy/include/std_msgs/msg/detail/color_rgba__struct.hpp
+/opt/ros/galactic/include/std_msgs/msg/detail/color_rgba__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -190,7 +190,7 @@ string
 vector
 -
 
-/opt/ros/foxy/include/std_msgs/msg/detail/header__struct.hpp
+/opt/ros/galactic/include/std_msgs/msg/detail/header__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -206,9 +206,9 @@ string
 vector
 -
 builtin_interfaces/msg/detail/time__struct.hpp
-/opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.hpp
+/opt/ros/galactic/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.hpp
 
-/opt/ros/foxy/include/visualization_msgs/msg/detail/marker__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/marker__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -224,19 +224,19 @@ string
 vector
 -
 std_msgs/msg/detail/header__struct.hpp
-/opt/ros/foxy/include/visualization_msgs/msg/detail/std_msgs/msg/detail/header__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/std_msgs/msg/detail/header__struct.hpp
 geometry_msgs/msg/detail/pose__struct.hpp
-/opt/ros/foxy/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/pose__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/pose__struct.hpp
 geometry_msgs/msg/detail/vector3__struct.hpp
-/opt/ros/foxy/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/vector3__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/vector3__struct.hpp
 std_msgs/msg/detail/color_rgba__struct.hpp
-/opt/ros/foxy/include/visualization_msgs/msg/detail/std_msgs/msg/detail/color_rgba__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/std_msgs/msg/detail/color_rgba__struct.hpp
 builtin_interfaces/msg/detail/duration__struct.hpp
-/opt/ros/foxy/include/visualization_msgs/msg/detail/builtin_interfaces/msg/detail/duration__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/builtin_interfaces/msg/detail/duration__struct.hpp
 geometry_msgs/msg/detail/point__struct.hpp
-/opt/ros/foxy/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.hpp
 
-/opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/marker_array__struct.hpp
 rosidl_runtime_cpp/bounded_vector.hpp
 -
 rosidl_runtime_cpp/message_initialization.hpp
@@ -252,7 +252,7 @@ string
 vector
 -
 visualization_msgs/msg/detail/marker__struct.hpp
-/opt/ros/foxy/include/visualization_msgs/msg/detail/visualization_msgs/msg/detail/marker__struct.hpp
+/opt/ros/galactic/include/visualization_msgs/msg/detail/visualization_msgs/msg/detail/marker__struct.hpp
 
 /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs/rosidl_typesupport_introspection_cpp/openpifpaf_ros2_msgs/msg/detail/person__type_support.cpp
 array

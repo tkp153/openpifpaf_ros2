@@ -105,7 +105,8 @@ static bool _Pose3DArray__cdr_deserialize(
       openpifpaf_ros2_msgs__msg__Pose3D__Sequence__fini(&ros_message->poses3d);
     }
     if (!openpifpaf_ros2_msgs__msg__Pose3D__Sequence__init(&ros_message->poses3d, size)) {
-      return "failed to create array for field 'poses3d'";
+      fprintf(stderr, "failed to create array for field 'poses3d'");
+      return false;
     }
     auto array_ptr = ros_message->poses3d.data;
     for (size_t i = 0; i < size; ++i) {
@@ -118,7 +119,7 @@ static bool _Pose3DArray__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_openpifpaf_ros2_msgs
 size_t get_serialized_size_openpifpaf_ros2_msgs__msg__Pose3DArray(

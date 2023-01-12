@@ -147,7 +147,8 @@ static bool _Poses__cdr_deserialize(
       openpifpaf_ros2_msgs__msg__Pose__Sequence__fini(&ros_message->poses);
     }
     if (!openpifpaf_ros2_msgs__msg__Pose__Sequence__init(&ros_message->poses, size)) {
-      return "failed to create array for field 'poses'";
+      fprintf(stderr, "failed to create array for field 'poses'");
+      return false;
     }
     auto array_ptr = ros_message->poses.data;
     for (size_t i = 0; i < size; ++i) {
@@ -160,7 +161,7 @@ static bool _Poses__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_openpifpaf_ros2_msgs
 size_t get_serialized_size_openpifpaf_ros2_msgs__msg__Poses(

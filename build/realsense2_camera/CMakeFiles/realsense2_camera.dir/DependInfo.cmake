@@ -14,9 +14,8 @@ set(CMAKE_CXX_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 set(CMAKE_TARGET_DEFINITIONS_CXX
-  "DEFAULT_RMW_IMPLEMENTATION=rmw_fastrtps_cpp"
+  "DEFAULT_RMW_IMPLEMENTATION=rmw_cyclonedds_cpp"
   "RCUTILS_ENABLE_FAULT_INJECTION"
-  "SPDLOG_COMPILED_LIB"
   "realsense2_camera_EXPORTS"
   )
 
@@ -24,7 +23,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/root/openpifpaf_ros2/src/realsense-ros/realsense2_camera/include"
   "/root/openpifpaf_ros2/install/realsense2_camera_msgs/include"
-  "/opt/ros/foxy/include"
+  "/opt/ros/galactic/include"
   "/usr/include/opencv4"
   )
 

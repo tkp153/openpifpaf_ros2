@@ -124,7 +124,7 @@ PyObject * realsense2_camera_msgs__msg__metadata__convert_to_py(void * raw_ros_m
     field = PyUnicode_DecodeUTF8(
       ros_message->json_data.data,
       strlen(ros_message->json_data.data),
-      "strict");
+      "replace");
     if (!field) {
       return NULL;
     }

@@ -132,7 +132,7 @@ static bool _Pose3D__cdr_deserialize(
   }
 
   return true;
-}
+}  // NOLINT(readability/fn_size)
 
 ROSIDL_TYPESUPPORT_FASTRTPS_C_PUBLIC_openpifpaf_ros2_msgs
 size_t get_serialized_size_openpifpaf_ros2_msgs__msg__Pose3D(

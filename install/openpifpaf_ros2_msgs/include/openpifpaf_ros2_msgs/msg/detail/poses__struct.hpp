@@ -55,7 +55,7 @@ struct Poses_
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
   using _poses_type =
-    std::vector<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>, typename ContainerAllocator::template rebind<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>>::other>;
+    std::vector<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>>>;
   _poses_type poses;
 
   // setters for named parameter idiom
@@ -66,7 +66,7 @@ struct Poses_
     return *this;
   }
   Type & set__poses(
-    const std::vector<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>, typename ContainerAllocator::template rebind<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>>::other> & _arg)
+    const std::vector<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<openpifpaf_ros2_msgs::msg::Pose_<ContainerAllocator>>> & _arg)
   {
     this->poses = _arg;
     return *this;

@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "rcutils/allocator.h"
-
 
 // Include directives for member types
 // Member `poses3d`
@@ -74,15 +72,14 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__copy(
 openpifpaf_ros2_msgs__msg__Pose3DArray *
 openpifpaf_ros2_msgs__msg__Pose3DArray__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  openpifpaf_ros2_msgs__msg__Pose3DArray * msg = (openpifpaf_ros2_msgs__msg__Pose3DArray *)allocator.allocate(sizeof(openpifpaf_ros2_msgs__msg__Pose3DArray), allocator.state);
+  openpifpaf_ros2_msgs__msg__Pose3DArray * msg = (openpifpaf_ros2_msgs__msg__Pose3DArray *)malloc(sizeof(openpifpaf_ros2_msgs__msg__Pose3DArray));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(openpifpaf_ros2_msgs__msg__Pose3DArray));
   bool success = openpifpaf_ros2_msgs__msg__Pose3DArray__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -91,11 +88,10 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__create()
 void
 openpifpaf_ros2_msgs__msg__Pose3DArray__destroy(openpifpaf_ros2_msgs__msg__Pose3DArray * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     openpifpaf_ros2_msgs__msg__Pose3DArray__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -105,11 +101,9 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__init(openpifpaf_ros2_msgs__msg
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   openpifpaf_ros2_msgs__msg__Pose3DArray * data = NULL;
-
   if (size) {
-    data = (openpifpaf_ros2_msgs__msg__Pose3DArray *)allocator.zero_allocate(size, sizeof(openpifpaf_ros2_msgs__msg__Pose3DArray), allocator.state);
+    data = (openpifpaf_ros2_msgs__msg__Pose3DArray *)calloc(size, sizeof(openpifpaf_ros2_msgs__msg__Pose3DArray));
     if (!data) {
       return false;
     }
@@ -126,7 +120,7 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__init(openpifpaf_ros2_msgs__msg
       for (; i > 0; --i) {
         openpifpaf_ros2_msgs__msg__Pose3DArray__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -142,8 +136,6 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__fini(openpifpaf_ros2_msgs__msg
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -151,7 +143,7 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__fini(openpifpaf_ros2_msgs__msg
     for (size_t i = 0; i < array->capacity; ++i) {
       openpifpaf_ros2_msgs__msg__Pose3DArray__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -165,14 +157,13 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__fini(openpifpaf_ros2_msgs__msg
 openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence *
 openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence * array = (openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence *)allocator.allocate(sizeof(openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence), allocator.state);
+  openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence * array = (openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence *)malloc(sizeof(openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -181,11 +172,10 @@ openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__create(size_t size)
 void
 openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__destroy(openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     openpifpaf_ros2_msgs__msg__Pose3DArray__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool

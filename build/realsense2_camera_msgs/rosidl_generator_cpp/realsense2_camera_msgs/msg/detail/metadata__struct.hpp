@@ -62,7 +62,7 @@ struct Metadata_
     std_msgs::msg::Header_<ContainerAllocator>;
   _header_type header;
   using _json_data_type =
-    std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other>;
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
   _json_data_type json_data;
 
   // setters for named parameter idiom
@@ -73,7 +73,7 @@ struct Metadata_
     return *this;
   }
   Type & set__json_data(
-    const std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other> & _arg)
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
   {
     this->json_data = _arg;
     return *this;

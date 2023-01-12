@@ -49,12 +49,12 @@ struct Pose3DArray_
 
   // field types and members
   using _poses3d_type =
-    std::vector<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>, typename ContainerAllocator::template rebind<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>>::other>;
+    std::vector<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>>>;
   _poses3d_type poses3d;
 
   // setters for named parameter idiom
   Type & set__poses3d(
-    const std::vector<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>, typename ContainerAllocator::template rebind<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>>::other> & _arg)
+    const std::vector<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<openpifpaf_ros2_msgs::msg::Pose3D_<ContainerAllocator>>> & _arg)
   {
     this->poses3d = _arg;
     return *this;

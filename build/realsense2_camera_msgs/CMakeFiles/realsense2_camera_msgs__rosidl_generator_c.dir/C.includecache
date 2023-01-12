@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+/opt/ros/galactic/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h
 -
 stddef.h
@@ -14,47 +14,7 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/rcutils/allocator.h
-stdbool.h
--
-stddef.h
--
-rcutils/macros.h
-/opt/ros/foxy/include/rcutils/rcutils/macros.h
-rcutils/types/rcutils_ret.h
-/opt/ros/foxy/include/rcutils/rcutils/types/rcutils_ret.h
-rcutils/visibility_control.h
-/opt/ros/foxy/include/rcutils/rcutils/visibility_control.h
-
-/opt/ros/foxy/include/rcutils/macros.h
-TargetConditionals.h
--
-Availability.h
--
-rcutils/testing/fault_injection.h
-/opt/ros/foxy/include/rcutils/rcutils/testing/fault_injection.h
-
-/opt/ros/foxy/include/rcutils/testing/fault_injection.h
-stdbool.h
--
-stdio.h
--
-stdint.h
--
-rcutils/macros.h
-/opt/ros/foxy/include/rcutils/testing/rcutils/macros.h
-rcutils/visibility_control.h
-/opt/ros/foxy/include/rcutils/testing/rcutils/visibility_control.h
-
-/opt/ros/foxy/include/rcutils/types/rcutils_ret.h
-
-/opt/ros/foxy/include/rcutils/visibility_control.h
-rcutils/visibility_control_macros.h
-/opt/ros/foxy/include/rcutils/rcutils/visibility_control_macros.h
-
-/opt/ros/foxy/include/rcutils/visibility_control_macros.h
-
-/opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
+/opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h
 -
 stddef.h
@@ -62,35 +22,35 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/rosidl_runtime_c/string.h
+/opt/ros/galactic/include/rosidl_runtime_c/string.h
 stddef.h
 -
 rosidl_runtime_c/primitives_sequence.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/string_functions.h
+/opt/ros/galactic/include/rosidl_runtime_c/string_functions.h
 stddef.h
 -
 rosidl_runtime_c/string.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/string.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/string.h
 rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 
-/opt/ros/foxy/include/std_msgs/msg/detail/header__functions.h
+/opt/ros/galactic/include/std_msgs/msg/detail/header__functions.h
 stdbool.h
 -
 stdlib.h
 -
 rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
 std_msgs/msg/rosidl_generator_c__visibility_control.h
-/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
 std_msgs/msg/detail/header__struct.h
-/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
 
-/opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/header__struct.h
 stdbool.h
 -
 stddef.h
@@ -98,11 +58,11 @@ stddef.h
 stdint.h
 -
 builtin_interfaces/msg/detail/time__struct.h
-/opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
 rosidl_runtime_c/string.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
 
-/opt/ros/foxy/include/std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/rosidl_generator_c__visibility_control.h
 
 /root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/msg/detail/extrinsics__functions.c
 realsense2_camera_msgs/msg/detail/extrinsics__functions.h
@@ -115,8 +75,6 @@ stdlib.h
 -
 string.h
 -
-rcutils/allocator.h
-/root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/msg/detail/rcutils/allocator.h
 std_msgs/msg/detail/header__functions.h
 /root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
 
@@ -131,8 +89,6 @@ stdlib.h
 -
 string.h
 -
-rcutils/allocator.h
-/root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/msg/detail/rcutils/allocator.h
 std_msgs/msg/detail/header__functions.h
 /root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
 
@@ -147,8 +103,6 @@ stdlib.h
 -
 string.h
 -
-rcutils/allocator.h
-/root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/msg/detail/rcutils/allocator.h
 std_msgs/msg/detail/header__functions.h
 /root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/msg/detail/std_msgs/msg/detail/header__functions.h
 rosidl_runtime_c/string_functions.h
@@ -165,8 +119,6 @@ stdlib.h
 -
 string.h
 -
-rcutils/allocator.h
-/root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/srv/detail/rcutils/allocator.h
 rosidl_runtime_c/string_functions.h
 /root/openpifpaf_ros2/build/realsense2_camera_msgs/rosidl_generator_c/realsense2_camera_msgs/srv/detail/rosidl_runtime_c/string_functions.h
 

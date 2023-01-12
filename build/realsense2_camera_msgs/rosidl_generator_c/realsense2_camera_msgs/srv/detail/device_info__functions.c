@@ -8,8 +8,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "rcutils/allocator.h"
-
 bool
 realsense2_camera_msgs__srv__DeviceInfo_Request__init(realsense2_camera_msgs__srv__DeviceInfo_Request * msg)
 {
@@ -58,15 +56,14 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__copy(
 realsense2_camera_msgs__srv__DeviceInfo_Request *
 realsense2_camera_msgs__srv__DeviceInfo_Request__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__srv__DeviceInfo_Request * msg = (realsense2_camera_msgs__srv__DeviceInfo_Request *)allocator.allocate(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Request), allocator.state);
+  realsense2_camera_msgs__srv__DeviceInfo_Request * msg = (realsense2_camera_msgs__srv__DeviceInfo_Request *)malloc(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Request));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(realsense2_camera_msgs__srv__DeviceInfo_Request));
   bool success = realsense2_camera_msgs__srv__DeviceInfo_Request__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -75,11 +72,10 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__create()
 void
 realsense2_camera_msgs__srv__DeviceInfo_Request__destroy(realsense2_camera_msgs__srv__DeviceInfo_Request * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     realsense2_camera_msgs__srv__DeviceInfo_Request__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -89,11 +85,9 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__init(realsense2_camer
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   realsense2_camera_msgs__srv__DeviceInfo_Request * data = NULL;
-
   if (size) {
-    data = (realsense2_camera_msgs__srv__DeviceInfo_Request *)allocator.zero_allocate(size, sizeof(realsense2_camera_msgs__srv__DeviceInfo_Request), allocator.state);
+    data = (realsense2_camera_msgs__srv__DeviceInfo_Request *)calloc(size, sizeof(realsense2_camera_msgs__srv__DeviceInfo_Request));
     if (!data) {
       return false;
     }
@@ -110,7 +104,7 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__init(realsense2_camer
       for (; i > 0; --i) {
         realsense2_camera_msgs__srv__DeviceInfo_Request__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -126,8 +120,6 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__fini(realsense2_camer
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -135,7 +127,7 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__fini(realsense2_camer
     for (size_t i = 0; i < array->capacity; ++i) {
       realsense2_camera_msgs__srv__DeviceInfo_Request__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -149,14 +141,13 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__fini(realsense2_camer
 realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence *
 realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence * array = (realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence *)allocator.allocate(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence), allocator.state);
+  realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence * array = (realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence *)malloc(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -165,11 +156,10 @@ realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__create(size_t size)
 void
 realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__destroy(realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     realsense2_camera_msgs__srv__DeviceInfo_Request__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool
@@ -393,15 +383,14 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__copy(
 realsense2_camera_msgs__srv__DeviceInfo_Response *
 realsense2_camera_msgs__srv__DeviceInfo_Response__create()
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__srv__DeviceInfo_Response * msg = (realsense2_camera_msgs__srv__DeviceInfo_Response *)allocator.allocate(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Response), allocator.state);
+  realsense2_camera_msgs__srv__DeviceInfo_Response * msg = (realsense2_camera_msgs__srv__DeviceInfo_Response *)malloc(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Response));
   if (!msg) {
     return NULL;
   }
   memset(msg, 0, sizeof(realsense2_camera_msgs__srv__DeviceInfo_Response));
   bool success = realsense2_camera_msgs__srv__DeviceInfo_Response__init(msg);
   if (!success) {
-    allocator.deallocate(msg, allocator.state);
+    free(msg);
     return NULL;
   }
   return msg;
@@ -410,11 +399,10 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__create()
 void
 realsense2_camera_msgs__srv__DeviceInfo_Response__destroy(realsense2_camera_msgs__srv__DeviceInfo_Response * msg)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (msg) {
     realsense2_camera_msgs__srv__DeviceInfo_Response__fini(msg);
   }
-  allocator.deallocate(msg, allocator.state);
+  free(msg);
 }
 
 
@@ -424,11 +412,9 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__init(realsense2_came
   if (!array) {
     return false;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   realsense2_camera_msgs__srv__DeviceInfo_Response * data = NULL;
-
   if (size) {
-    data = (realsense2_camera_msgs__srv__DeviceInfo_Response *)allocator.zero_allocate(size, sizeof(realsense2_camera_msgs__srv__DeviceInfo_Response), allocator.state);
+    data = (realsense2_camera_msgs__srv__DeviceInfo_Response *)calloc(size, sizeof(realsense2_camera_msgs__srv__DeviceInfo_Response));
     if (!data) {
       return false;
     }
@@ -445,7 +431,7 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__init(realsense2_came
       for (; i > 0; --i) {
         realsense2_camera_msgs__srv__DeviceInfo_Response__fini(&data[i - 1]);
       }
-      allocator.deallocate(data, allocator.state);
+      free(data);
       return false;
     }
   }
@@ -461,8 +447,6 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__fini(realsense2_came
   if (!array) {
     return;
   }
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-
   if (array->data) {
     // ensure that data and capacity values are consistent
     assert(array->capacity > 0);
@@ -470,7 +454,7 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__fini(realsense2_came
     for (size_t i = 0; i < array->capacity; ++i) {
       realsense2_camera_msgs__srv__DeviceInfo_Response__fini(&array->data[i]);
     }
-    allocator.deallocate(array->data, allocator.state);
+    free(array->data);
     array->data = NULL;
     array->size = 0;
     array->capacity = 0;
@@ -484,14 +468,13 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__fini(realsense2_came
 realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence *
 realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__create(size_t size)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
-  realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence * array = (realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence *)allocator.allocate(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence), allocator.state);
+  realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence * array = (realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence *)malloc(sizeof(realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence));
   if (!array) {
     return NULL;
   }
   bool success = realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__init(array, size);
   if (!success) {
-    allocator.deallocate(array, allocator.state);
+    free(array);
     return NULL;
   }
   return array;
@@ -500,11 +483,10 @@ realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__create(size_t size)
 void
 realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__destroy(realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence * array)
 {
-  rcutils_allocator_t allocator = rcutils_get_default_allocator();
   if (array) {
     realsense2_camera_msgs__srv__DeviceInfo_Response__Sequence__fini(array);
   }
-  allocator.deallocate(array, allocator.state);
+  free(array);
 }
 
 bool

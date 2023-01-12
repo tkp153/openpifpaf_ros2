@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/duration__struct.h
+/opt/ros/galactic/include/builtin_interfaces/msg/detail/duration__struct.h
 stdbool.h
 -
 stddef.h
@@ -14,7 +14,7 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/builtin_interfaces/msg/detail/time__struct.h
+/opt/ros/galactic/include/builtin_interfaces/msg/detail/time__struct.h
 stdbool.h
 -
 stddef.h
@@ -22,7 +22,7 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/point__struct.h
+/opt/ros/galactic/include/geometry_msgs/msg/detail/point__struct.h
 stdbool.h
 -
 stddef.h
@@ -30,7 +30,7 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/pose__struct.h
+/opt/ros/galactic/include/geometry_msgs/msg/detail/pose__struct.h
 stdbool.h
 -
 stddef.h
@@ -38,11 +38,11 @@ stddef.h
 stdint.h
 -
 geometry_msgs/msg/detail/point__struct.h
-/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.h
+/opt/ros/galactic/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.h
 geometry_msgs/msg/detail/quaternion__struct.h
-/opt/ros/foxy/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/quaternion__struct.h
+/opt/ros/galactic/include/geometry_msgs/msg/detail/geometry_msgs/msg/detail/quaternion__struct.h
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/quaternion__struct.h
+/opt/ros/galactic/include/geometry_msgs/msg/detail/quaternion__struct.h
 stdbool.h
 -
 stddef.h
@@ -50,7 +50,7 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/geometry_msgs/msg/detail/vector3__struct.h
+/opt/ros/galactic/include/geometry_msgs/msg/detail/vector3__struct.h
 stdbool.h
 -
 stddef.h
@@ -58,15 +58,15 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/rosidl_runtime_c/message_initialization.h
+/opt/ros/galactic/include/rosidl_runtime_c/message_initialization.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/rosidl_runtime_c/message_type_support_struct.h
 rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 rosidl_typesupport_interface/macros.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_typesupport_interface/macros.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence.h
+/opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence.h
 stdbool.h
 -
 stddef.h
@@ -74,35 +74,35 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/rosidl_runtime_c/primitives_sequence_functions.h
+/opt/ros/galactic/include/rosidl_runtime_c/primitives_sequence_functions.h
 stdbool.h
 -
 stddef.h
 -
 rosidl_runtime_c/primitives_sequence.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
 rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/string.h
+/opt/ros/galactic/include/rosidl_runtime_c/string.h
 stddef.h
 -
 rosidl_runtime_c/primitives_sequence.h
-/opt/ros/foxy/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
+/opt/ros/galactic/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h
 
-/opt/ros/foxy/include/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_runtime_c/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/rosidl_typesupport_interface/macros.h
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/field_types.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/field_types.h
 stdint.h
 -
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/identifier.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/identifier.h
 rosidl_typesupport_introspection_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/message_introspection.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/message_introspection.h
 stdbool.h
 -
 stddef.h
@@ -110,15 +110,15 @@ stddef.h
 stdint.h
 -
 rosidl_runtime_c/message_initialization.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/rosidl_runtime_c/message_initialization.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/rosidl_runtime_c/message_initialization.h
 rosidl_runtime_c/message_type_support_struct.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_introspection_c/visibility_control.h
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/rosidl_typesupport_introspection_c/visibility_control.h
 
-/opt/ros/foxy/include/rosidl_typesupport_introspection_c/visibility_control.h
+/opt/ros/galactic/include/rosidl_typesupport_introspection_c/visibility_control.h
 
-/opt/ros/foxy/include/std_msgs/msg/detail/color_rgba__struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/color_rgba__struct.h
 stdbool.h
 -
 stddef.h
@@ -126,27 +126,27 @@ stddef.h
 stdint.h
 -
 
-/opt/ros/foxy/include/std_msgs/msg/detail/header__functions.h
+/opt/ros/galactic/include/std_msgs/msg/detail/header__functions.h
 stdbool.h
 -
 stdlib.h
 -
 rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
 std_msgs/msg/rosidl_generator_c__visibility_control.h
-/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
 std_msgs/msg/detail/header__struct.h
-/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
 
-/opt/ros/foxy/include/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h
+/opt/ros/galactic/include/std_msgs/msg/detail/header__rosidl_typesupport_introspection_c.h
 rosidl_runtime_c/message_type_support_struct.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_interface/macros.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_typesupport_interface/macros.h
 std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
-/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/detail/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
-/opt/ros/foxy/include/std_msgs/msg/detail/header__struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/header__struct.h
 stdbool.h
 -
 stddef.h
@@ -154,31 +154,31 @@ stddef.h
 stdint.h
 -
 builtin_interfaces/msg/detail/time__struct.h
-/opt/ros/foxy/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/builtin_interfaces/msg/detail/time__struct.h
 rosidl_runtime_c/string.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_runtime_c/string.h
 
-/opt/ros/foxy/include/std_msgs/msg/detail/header__type_support.h
+/opt/ros/galactic/include/std_msgs/msg/detail/header__type_support.h
 rosidl_typesupport_interface/macros.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_typesupport_interface/macros.h
 std_msgs/msg/rosidl_generator_c__visibility_control.h
-/opt/ros/foxy/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/detail/std_msgs/msg/rosidl_generator_c__visibility_control.h
 rosidl_runtime_c/message_type_support_struct.h
-/opt/ros/foxy/include/std_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/std_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 
-/opt/ros/foxy/include/std_msgs/msg/header.h
+/opt/ros/galactic/include/std_msgs/msg/header.h
 std_msgs/msg/detail/header__struct.h
-/opt/ros/foxy/include/std_msgs/msg/std_msgs/msg/detail/header__struct.h
+/opt/ros/galactic/include/std_msgs/msg/std_msgs/msg/detail/header__struct.h
 std_msgs/msg/detail/header__functions.h
-/opt/ros/foxy/include/std_msgs/msg/std_msgs/msg/detail/header__functions.h
+/opt/ros/galactic/include/std_msgs/msg/std_msgs/msg/detail/header__functions.h
 std_msgs/msg/detail/header__type_support.h
-/opt/ros/foxy/include/std_msgs/msg/std_msgs/msg/detail/header__type_support.h
+/opt/ros/galactic/include/std_msgs/msg/std_msgs/msg/detail/header__type_support.h
 
-/opt/ros/foxy/include/std_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/rosidl_generator_c__visibility_control.h
 
-/opt/ros/foxy/include/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/opt/ros/galactic/include/std_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/detail/marker__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/marker__struct.h
 stdbool.h
 -
 stddef.h
@@ -186,41 +186,41 @@ stddef.h
 stdint.h
 -
 std_msgs/msg/detail/header__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/std_msgs/msg/detail/header__struct.h
 rosidl_runtime_c/string.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/rosidl_runtime_c/string.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/rosidl_runtime_c/string.h
 geometry_msgs/msg/detail/pose__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/pose__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/pose__struct.h
 geometry_msgs/msg/detail/vector3__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/vector3__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/vector3__struct.h
 std_msgs/msg/detail/color_rgba__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/std_msgs/msg/detail/color_rgba__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/std_msgs/msg/detail/color_rgba__struct.h
 builtin_interfaces/msg/detail/duration__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/builtin_interfaces/msg/detail/duration__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/builtin_interfaces/msg/detail/duration__struct.h
 geometry_msgs/msg/detail/point__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/geometry_msgs/msg/detail/point__struct.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__functions.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/marker_array__functions.h
 stdbool.h
 -
 stdlib.h
 -
 rosidl_runtime_c/visibility_control.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/rosidl_runtime_c/visibility_control.h
 visualization_msgs/msg/rosidl_generator_c__visibility_control.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/visualization_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/visualization_msgs/msg/rosidl_generator_c__visibility_control.h
 visualization_msgs/msg/detail/marker_array__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/visualization_msgs/msg/detail/marker_array__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/visualization_msgs/msg/detail/marker_array__struct.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__rosidl_typesupport_introspection_c.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/marker_array__rosidl_typesupport_introspection_c.h
 rosidl_runtime_c/message_type_support_struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 rosidl_typesupport_interface/macros.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/rosidl_typesupport_interface/macros.h
 visualization_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/visualization_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/visualization_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/marker_array__struct.h
 stdbool.h
 -
 stddef.h
@@ -228,27 +228,27 @@ stddef.h
 stdint.h
 -
 visualization_msgs/msg/detail/marker__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/visualization_msgs/msg/detail/marker__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/visualization_msgs/msg/detail/marker__struct.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/detail/marker_array__type_support.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/marker_array__type_support.h
 rosidl_typesupport_interface/macros.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/rosidl_typesupport_interface/macros.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/rosidl_typesupport_interface/macros.h
 visualization_msgs/msg/rosidl_generator_c__visibility_control.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/visualization_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/visualization_msgs/msg/rosidl_generator_c__visibility_control.h
 rosidl_runtime_c/message_type_support_struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/detail/rosidl_runtime_c/message_type_support_struct.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/marker_array.h
+/opt/ros/galactic/include/visualization_msgs/msg/marker_array.h
 visualization_msgs/msg/detail/marker_array__struct.h
-/opt/ros/foxy/include/visualization_msgs/msg/visualization_msgs/msg/detail/marker_array__struct.h
+/opt/ros/galactic/include/visualization_msgs/msg/visualization_msgs/msg/detail/marker_array__struct.h
 visualization_msgs/msg/detail/marker_array__functions.h
-/opt/ros/foxy/include/visualization_msgs/msg/visualization_msgs/msg/detail/marker_array__functions.h
+/opt/ros/galactic/include/visualization_msgs/msg/visualization_msgs/msg/detail/marker_array__functions.h
 visualization_msgs/msg/detail/marker_array__type_support.h
-/opt/ros/foxy/include/visualization_msgs/msg/visualization_msgs/msg/detail/marker_array__type_support.h
+/opt/ros/galactic/include/visualization_msgs/msg/visualization_msgs/msg/detail/marker_array__type_support.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/rosidl_generator_c__visibility_control.h
+/opt/ros/galactic/include/visualization_msgs/msg/rosidl_generator_c__visibility_control.h
 
-/opt/ros/foxy/include/visualization_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
+/opt/ros/galactic/include/visualization_msgs/msg/rosidl_typesupport_introspection_c__visibility_control.h
 
 /root/openpifpaf_ros2/build/openpifpaf_ros2_msgs/rosidl_typesupport_introspection_c/openpifpaf_ros2_msgs/msg/detail/person__type_support.c
 stddef.h
